@@ -1,0 +1,15 @@
+.container {
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  width: calc(100% + 0px);
+  height: calc(100% + 0px);
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+}

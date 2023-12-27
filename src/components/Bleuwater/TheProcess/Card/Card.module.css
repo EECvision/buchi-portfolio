@@ -1,0 +1,37 @@
+.container {
+  border: 1px solid red;
+}
+
+.iconContainer {
+  width: 33.846px;
+  height: 33.846px;
+  flex-shrink: 0;
+  border-radius: 7.615px;
+  background: #0f96ff;
+}
+
+.innerIconContainer {
+  width: 17.769px;
+  height: 17.769px;
+  flex-shrink: 0;
+}
+
+.title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12.692px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 173.333% */
+  letter-spacing: 0.888px;
+}
+
+.description {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 200% */
+  letter-spacing: 0.77px;
+}

@@ -1,0 +1,55 @@
+.wrapper {
+  margin-bottom: 149px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.label {
+  display: flex;
+  width: 573px;
+  height: auto;
+}
+
+.title {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; /* 287.5% */
+  margin-bottom: 46px;
+}
+
+.image {
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 8px;
+    margin-bottom: 69px;
+  }
+
+  .label {
+    max-width: 355px;
+  }
+
+  .container {
+    align-items: flex-start;
+  }
+}

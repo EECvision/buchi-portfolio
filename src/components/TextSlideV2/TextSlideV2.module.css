@@ -1,0 +1,38 @@
+.container {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.content {
+  display: inline-block;
+}
+
+.enter {
+  animation: enter 0.65s forwards;
+  /* cubic-bezier(0.61, 0.08, 0, 0.99); */
+  /* cubic-bezier(0.65, 0.24, 0, 1) */
+}
+
+.leave {
+  animation: leave 0s forwards;
+}
+
+@keyframes enter {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes leave {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}

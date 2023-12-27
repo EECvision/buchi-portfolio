@@ -1,0 +1,19 @@
+.text {
+  background: linear-gradient(116deg, #f2994a 0%, #9747ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 250% auto;
+  animation: textShine 2.5s ease-in-out infinite alternate;
+  display: inline;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 100%;
+  }
+}

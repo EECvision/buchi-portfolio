@@ -1,0 +1,60 @@
+.container {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  margin-bottom: 83px;
+  padding: 0 16px;
+}
+
+.label {
+  width: 410px;
+  height: auto;
+  object-fit: contain;
+}
+
+.title {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-bottom: 22px;
+}
+
+.personas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .personas {
+    gap: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 48px;
+  }
+
+  .personas {
+    flex-direction: column;
+  }
+
+  .label {
+    max-width: 240px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  margin-bottom: 46px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container img:nth-child(2) {
+  margin-bottom: 51px;
+}
+
+@media screen and (max-width: 768px) {
+  .container img:nth-child(2) {
+    margin-bottom: 51px;
+    margin-bottom: 16px;
+  }
+}

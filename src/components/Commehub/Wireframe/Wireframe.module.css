@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  margin-bottom: 110px;
+  padding: 0 16px;
+}
+
+.label {
+  width: 100%;
+  max-width: 514px;
+  height: auto;
+}
+
+.title {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-bottom: 24px;
+}
+
+.description,
+.description span {
+  color: #7d8387;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 193.75% */
+  letter-spacing: 1px;
+  margin-bottom: 42px;
+}
+
+.description span {
+  color: #fff;
+}
+
+.wireframe {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 47px;
+  }
+
+  .label {
+    max-width: 275px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+}

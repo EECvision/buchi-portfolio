@@ -1,0 +1,141 @@
+.container {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 155px;
+}
+
+.heading {
+  width: 100%;
+  max-width: 875px;
+  height: auto;
+}
+
+.description {
+  max-width: 738px;
+  color: #d1d1d1;
+  font-family: Monument Extended;
+  font-size: 13.537px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.997px;
+  /* 162.5% */
+  letter-spacing: 0.068px;
+  margin-bottom: 58px;
+}
+
+.funProjectContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.funProject {
+  width: 100%;
+  height: 158px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 13px;
+  position: relative;
+  border-bottom: 2px solid #171718;
+}
+
+.funProject:first-child {
+  border-top: 2px solid #171718;
+}
+
+.text {
+  color: #3e4044;
+  font-family: Monument Extended;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  transition: all 650ms;
+}
+
+.text::after {
+  content: attr(data-index);
+  position: absolute;
+  right: -48px;
+  top: 16px;
+  color: #3e4044;
+  font-family: Krona One;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+  letter-spacing: 0.08px;
+  transition: all 650ms;
+}
+
+.bg {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  left: 0;
+  transition: all 650ms;
+  background: transparent;
+}
+
+.funProject:hover .text::after {
+  color: #fff;
+}
+
+.funProject:hover .text {
+  color: #fff;
+}
+
+.funProject:hover .bg {
+  background: #3e4044;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .text {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 84px;
+  }
+
+  .heading {
+    max-width: 271px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .funProject {
+    height: 82px;
+  }
+
+  .text {
+    color: #3e4044;
+    font-family: Monument Extended;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .text::after {
+    top: 50%;
+    right: -32px;
+  }
+}

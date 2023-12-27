@@ -1,0 +1,65 @@
+.btn {
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  transition: transform 0.65s cubic-bezier(0, -0.1, 0, 0.99);
+  overflow: hidden;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(101%);
+  z-index: 10 !important;
+}
+
+.textContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  transition: transform 0.65s cubic-bezier(0, -0.1, 0, 0.99);
+}
+
+.text.leave {
+  transform: translate(0, 0) !important;
+}
+
+.overlay.enter {
+  animation: enter 300ms ease-out forwards;
+}
+
+.overlay.leave {
+  animation: leave 300ms ease-out forwards;
+}
+
+@keyframes enter {
+  0% {
+    transform: translateY(101%);
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: translateY(0);
+    border-radius: 86.091px;
+  }
+}
+
+@keyframes leave {
+  0% {
+    transform: translateY(0);
+    border-radius: 86.091px;
+  }
+
+  100% {
+    transform: translateY(-101%);
+    border-radius: 50%;
+  }
+}

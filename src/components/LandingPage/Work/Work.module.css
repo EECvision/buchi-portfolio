@@ -1,0 +1,117 @@
+.container {
+  padding-bottom: 71px;
+  margin-top: -58px;
+  position: relative;
+  background: #313335;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.scrollWrapper {
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.scrollWindow {
+  height: auto;
+}
+
+.scrollWindow > div {
+  height: 120vh;
+}
+
+.projects {
+  width: 100%;
+  position: relative;
+  padding-top: 4px;
+}
+
+.btnContainer {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 258px;
+  height: 106px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1.644px solid #3e3e46;
+  background: #353739;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14.558px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21.264px; /* 146.071% */
+  letter-spacing: 0.218px;
+  text-transform: uppercase;
+}
+
+.count {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21.264px; /* 132.903% */
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-left: 6px;
+}
+
+.btnOverlay {
+  background: #f4821e;
+}
+
+@media screen and (max-width: calc(1440px + 24px)) {
+  .wrapper {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 84px;
+  }
+
+  .scrollWindow {
+    display: none;
+  }
+
+  .scrollWindow > div {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    gap: 96px;
+  }
+
+  .container {
+    margin-top: 0;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+}

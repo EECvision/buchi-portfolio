@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  margin-bottom: 89px;
+  padding: 0 16px;
+}
+
+.label {
+  max-width: 549px;
+  height: auto;
+  margin-bottom: -22px;
+}
+
+.title {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-bottom: 14px;
+}
+
+.description {
+  margin-bottom: 47px;
+}
+
+.description,
+.description span {
+  color: #7d8387;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 221.429% */
+  letter-spacing: 1px;
+}
+
+.description span {
+  color: #fff;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 57px;
+  }
+
+  .label {
+    max-width: 333px;
+    margin-bottom: -8px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .description {
+    margin-bottom: 34px;
+  }
+
+  .description,
+  .description span {
+    font-size: 12px;
+  }
+}

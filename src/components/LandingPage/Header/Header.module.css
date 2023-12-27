@@ -1,0 +1,288 @@
+.container {
+  height: calc(620px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 104px;
+  position: relative;
+}
+
+.imagePlaceholder,
+.imageContainer {
+  top: -24px;
+  transform: translateX(-40px);
+}
+
+.elipse {
+  width: 1079px;
+  height: 1079px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: rgb(244, 130, 30, 0.6);
+  filter: blur(80px);
+  transform: translateY(-35%);
+  border: 4px solid red;
+}
+
+.imagePlaceholder {
+  z-index: 30;
+}
+
+.image {
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+  transition: all 100ms linear;
+}
+
+.imageContainer,
+.imagePlaceholder,
+.image {
+  width: 486.896px;
+  position: absolute;
+}
+
+.desktop {
+  /* display: none; */
+}
+
+.mobile {
+  display: none;
+}
+
+.connectContainer {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(50%, 90%);
+  position: absolute;
+  right: 0;
+}
+
+.btn {
+  width: 143px;
+  height: 143px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #3b3d3f;
+}
+
+.btnContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 11px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 13.518px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19.746px; /* 146.071% */
+  letter-spacing: 0.203px;
+  text-transform: uppercase;
+}
+
+.btnOverlay {
+  background: #545659;
+  background: #f4821e;
+}
+
+.connectIcon {
+  transition: transform 650ms;
+}
+
+.connectIcon img {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  transform-origin: bottom;
+}
+
+.connectIcon.top {
+  transform: rotate(-45deg);
+}
+.connectIcon.top-right {
+  transform: rotate(0);
+}
+.connectIcon.right {
+  transform: rotate(45deg);
+}
+.connectIcon.bottom-right {
+  transform: rotate(90deg);
+}
+.connectIcon.bottom {
+  transform: rotate(135deg);
+}
+.connectIcon.bottom-left {
+  transform: rotate(180deg);
+}
+.connectIcon.left {
+  transform: rotate(225deg);
+}
+.connectIcon.top-left {
+  transform: rotate(270deg);
+}
+
+.textContainer {
+  position: relative;
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mainText {
+  width: max-content;
+  color: #fff;
+  font-family: Monument Extended Ultrabold;
+  font-size: 106px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.mainText img {
+  width: 10.5vw;
+  height: auto;
+}
+
+.zero {
+  width: 160.496px;
+  height: 74.898px;
+  border-radius: 40.754px;
+  border: 25.471px solid #fff;
+  background: #fff;
+  display: inline-block;
+}
+
+._e {
+  mix-blend-mode: lighten !important;
+}
+
+.animationContainer {
+  overflow: hidden;
+  position: relative;
+  z-index: 25;
+}
+
+.text {
+  width: 100%;
+  max-width: 1440px;
+  /*  */
+  color: #d1d1d1;
+  font-family: Poppins;
+  font-size: 14.56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.748px; /* 156.237% */
+  letter-spacing: 0.51px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.right {
+  text-align: right;
+}
+
+.iconContainer {
+  width: 100%;
+  margin-bottom: 43.38px;
+}
+
+@media screen and (min-width: 1440px) {
+  .mainText img {
+    width: 160.5px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: calc(1440px + 24px)) {
+  .text {
+    /* padding: 0 24px; */
+  }
+
+  .elipse {
+    transform: translateY(-55%);
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 0 24px;
+    padding-top: 95px;
+    justify-content: flex-start;
+  }
+
+  .elipse {
+    width: 400px;
+    height: 400px;
+    transform: translateY(-150%);
+    position: absolute;
+  }
+
+  .right {
+    width: 100%;
+    text-align: left;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .imageContainer,
+  .image {
+    width: 436px;
+    position: static;
+  }
+
+  .imagePlaceholder {
+    width: max-content;
+    bottom: 300px;
+    top: unset;
+    right: 0;
+  }
+
+  .connectContainer {
+    transform: translate(0);
+    position: static;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .textContainer .text:nth-child(2) {
+    margin-bottom: 14px;
+  }
+
+  .mainText {
+    width: 100%;
+    white-space: unset;
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 58.36px !important;
+    font-weight: 800;
+    /* line-height: 57.513px; */
+    letter-spacing: 0.512px;
+  }
+
+  .mainText img {
+    width: 88px;
+  }
+
+  .text {
+    padding: 0;
+  }
+}

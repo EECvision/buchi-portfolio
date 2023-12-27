@@ -1,0 +1,80 @@
+.container {
+  width: 100%;
+  max-width: 396px;
+}
+
+.icons {
+  margin-bottom: 26px;
+  width: max-content;
+  position: relative;
+  transform: translateY(10px);
+  transition: all 650ms cubic-bezier(0.8, 0.18, 0.41, 1.03);
+}
+
+.icons .quote {
+  transition: all 300ms cubic-bezier(0.8, 0.18, 0.41, 1.03);
+}
+
+.quote:first-child {
+  position: absolute;
+}
+
+.quote:nth-child(2) {
+  visibility: hidden;
+}
+.container:hover .icons {
+  transform: translateY(0);
+}
+
+.container:hover .quote:nth-child(2) {
+  visibility: visible;
+}
+
+.review {
+  color: #d1d1d1;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30.1px; /* 188.125% */
+  letter-spacing: 0.72px;
+  margin-bottom: 64px;
+}
+
+.name {
+  color: #545454;
+  font-family: Monument Extended;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.372px; /* 203.099% */
+  letter-spacing: 0.06px;
+}
+
+.project {
+  color: #d1d1d1;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24.372px; /* 203.099% */
+  letter-spacing: 0.06px;
+}
+
+.underline {
+  width: 0;
+  height: 1px;
+  background: rgba(242, 153, 74, 1);
+  margin-top: 24px;
+  transition: all 650ms cubic-bezier(0.8, 0.18, 0.41, 1.03);
+}
+
+.container:hover .underline {
+  width: 100%;
+}
+
+@media screen and (max-width: 872px) {
+  .container {
+    max-width: 100%;
+  }
+}

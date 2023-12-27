@@ -1,0 +1,139 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.placeholder {
+  width: 100%;
+  height: 574px;
+  border: 4px solid red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.imageContainer {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -4px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.details {
+  padding: 28px;
+  background: #313335;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #3d4244;
+}
+
+.name {
+  color: #fff;
+  font-family: Monument Extended;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26.183px; /* 93.511% */
+  letter-spacing: 0.14px;
+  margin-bottom: 15px;
+}
+
+.description {
+  max-width: 468px;
+  /* padding-right: 48px; */
+  color: #d1d1d1;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.93px; /* 192.359% */
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+}
+
+.link {
+  color: #d1d1d1;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.93px; /* 192.359% */
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+}
+
+.label {
+  color: #5b5c5e;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.93px; /* 192.359% */
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .imageContainer img {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .count {
+    margin-bottom: 31px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.183px; /* 109.096% */
+    letter-spacing: 0.12px;
+  }
+
+  .name {
+    margin-bottom: 9px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.183px; /* 109.096% */
+    letter-spacing: 0.12px;
+  }
+
+  .nameAndDescription {
+    margin-bottom: 28px;
+  }
+
+  .link {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    /* height: 80vh; */
+    position: static;
+    height: auto;
+  }
+}

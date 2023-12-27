@@ -1,0 +1,179 @@
+.container {
+  margin-top: -14em;
+  margin-bottom: 93px;
+}
+
+.heading {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 71px;
+}
+
+.stages {
+  max-width: 1196px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.stage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  gap: 48px;
+}
+
+.topic {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.topic > span:last-child {
+  position: relative;
+}
+
+.topic > span:last-child::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #14d3b2;
+  border-radius: 50%;
+  right: -16px;
+  bottom: 16px;
+}
+
+.text ul li,
+.text {
+  width: 100%;
+  max-width: 846px;
+  color: #7d8387;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  /* 193.75% */
+  letter-spacing: 1px;
+}
+
+.text span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  /* 193.75% */
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.right {
+  width: 100%;
+  max-width: 893px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.right img {
+  width: 100%;
+  max-width: 844px;
+  height: auto;
+}
+
+.userPersona {
+  width: 109px;
+  height: auto;
+  transform: translateY(-18%);
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .stages {
+    padding: 0 32px;
+  }
+
+  .right {
+    max-width: 746px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    margin-top: -12em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: -10em;
+  }
+
+  .right {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .userPersona {
+    display: none;
+  }
+
+  .stage {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .right {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: -6em;
+    margin-bottom: 23px;
+  }
+
+  .heading {
+    margin-bottom: 46px;
+  }
+
+  .stages {
+    padding: 0 16px;
+  }
+
+  .topic {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .topic > span:last-child::after {
+    bottom: 8px;
+  }
+
+  .text span,
+  .text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}

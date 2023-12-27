@@ -1,0 +1,248 @@
+.container {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  margin-bottom: 106.87px;
+  padding: 0 16px;
+}
+
+.label {
+  width: 100%;
+  max-width: 393px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 112px;
+  gap: 24px;
+}
+
+.logo {
+  width: 69px;
+  height: 69px;
+}
+
+.lhs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 17px;
+}
+
+.lhs span {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.top .rhs {
+  width: 100%;
+  max-width: 638px;
+}
+
+.top .title {
+  width: max-content;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.12px;
+  margin-bottom: 32px;
+  position: relative;
+  margin-left: 16px;
+}
+
+.top .title svg {
+  position: absolute;
+}
+
+.top .title svg:first-child {
+  position: absolute;
+  left: 0;
+  transform: translateX(calc(-100% - 4px)) translateY(-8px);
+}
+
+.top .title svg:last-child {
+  position: absolute;
+  right: 0;
+  transform: translateX(100%) translateY(-12px);
+}
+
+.top .description {
+  color: #7d8387;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.98px;
+  margin-bottom: 28px;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12.51px;
+}
+
+.iconContainer {
+  display: flex;
+  width: 48.246px;
+  height: 48.246px;
+  padding: 8.338px 8.338px 8.935px 8.936px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 59.563px;
+  background: #2b2a2d;
+  box-shadow:
+    6.55189px 6.55189px 4.76501px 0px rgba(0, 0, 0, 0.25),
+    -6.55189px -6.55189px 7.74314px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content > .title {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.12px;
+  margin-bottom: 58px;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 108px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 58px;
+}
+
+.details .title {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 17.393px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.174px;
+  margin-bottom: 12px;
+}
+
+.details .description {
+  color: #7d8387;
+  font-family: Poppins;
+  font-size: 12.175px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.852px;
+}
+
+.image {
+  flex: 1;
+  width: 100%;
+  max-width: 640.944px;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .image {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    max-width: 420px;
+  }
+
+  .section {
+    gap: 36px;
+  }
+
+  .logo {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 65px;
+  }
+
+  .label {
+    max-width: 234px;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 62px;
+  }
+
+  .sections {
+    gap: 46px;
+  }
+
+  .section {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .section.alternate {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .logo {
+    width: 38.316px;
+    height: 38.316px;
+  }
+
+  .content > .title {
+    margin-bottom: 31px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .top .title,
+  .details .title {
+    font-size: 14px;
+  }
+
+  .details .description,
+  .top .description {
+    font-size: 12px;
+  }
+
+  .top .title {
+    margin-bottom: 14px;
+  }
+}

@@ -1,0 +1,146 @@
+.container {
+  border-top: 1px solid#171718;
+  margin-bottom: 67px;
+  padding-top: 42px;
+  padding-bottom: 67px;
+}
+
+.stages {
+  max-width: 1202px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.stage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.topic {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.topic > span:last-child {
+  position: relative;
+}
+
+.topic > span:last-child::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #14d3b2;
+  border-radius: 50%;
+  right: -16px;
+  bottom: 16px;
+}
+
+.text ul li,
+.text {
+  width: 100%;
+  max-width: 846px;
+  color: #7d8387;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  /* 193.75% */
+  letter-spacing: 1px;
+}
+
+.text span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  /* 193.75% */
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.link {
+  color: #7d8387;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  /* 221.429% */
+  letter-spacing: 1px;
+  /* align-self: flex-end; */
+  float: right;
+}
+
+@media screen and (max-width: 1440px) {
+  .stages {
+    padding: 0 32px;
+  }
+
+  .text {
+    max-width: 746px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .stage {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    gap: 12px;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 35px;
+    padding-top: 27px;
+  }
+
+  .stages {
+    padding: 0 16px;
+  }
+
+  .topic {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .topic > span:last-child::after {
+    bottom: 8px;
+  }
+
+  .text,
+  .text span {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}

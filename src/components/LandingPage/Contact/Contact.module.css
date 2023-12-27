@@ -1,0 +1,137 @@
+.container {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 118.33px;
+  height: 118.333px;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  background: #353739;
+  box-shadow: 6.651px 7.256px 13.907px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.text {
+  color: #d1d1d1;
+  font-family: Poppins;
+  font-size: 18.162px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21.189px; /* 116.667% */
+  letter-spacing: 0.182px;
+}
+
+.mainText {
+  color: #fff;
+  font-family: Monument Extended Ultrabold;
+  font-size: 82.647px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.91px;
+  text-transform: uppercase;
+  padding: 64px 0;
+  position: relative;
+}
+
+.mainTextOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.btn {
+  width: 285px;
+  height: 91.26px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1.644px solid #3e3e46;
+  background: #353739;
+  /* box-shadow: 8.08px 9.73px 36.81px 0px rgba(0, 0, 0, 0.08); */
+}
+
+.btnText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  /*  */
+  color: #d1d1d1;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18.307px; /* 114.417% */
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+}
+
+.boxText {
+  font-weight: 900;
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .mainText {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainText {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainText {
+    font-size: 36px;
+    padding: 48px 0;
+  }
+
+  .btnContainer {
+    flex-direction: column;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 24.612px; /* 175.801% */
+    letter-spacing: 0.14px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mainText {
+    font-size: 26px;
+    line-height: 31.663px; /* 122.273% */
+    letter-spacing: 0.285px;
+    padding: 0;
+    margin-top: 21px;
+    margin-bottom: 50px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}

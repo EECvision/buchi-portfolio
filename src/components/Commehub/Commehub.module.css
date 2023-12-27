@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 742px;
+  object-fit: cover;
+  margin-bottom: 105px;
+}
+
+@media screen and (max-width: 1200px) {
+  .image {
+    margin-bottom: 84px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .image {
+    margin-bottom: 41px;
+  }
+}

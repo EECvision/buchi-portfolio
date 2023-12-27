@@ -1,0 +1,151 @@
+.container {
+  width: 100%;
+  max-width: 1313px;
+  height: 595px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  border-radius: 23px;
+  border: 1px solid #222229;
+  background: #141414;
+  box-shadow: 11px 12px 23px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+}
+
+.title {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148px;
+  text-align: center;
+  /* 308.333% */
+}
+
+.title.mobile {
+  display: none;
+}
+
+.description {
+  max-width: 604px;
+  color: #656161;
+  text-align: center;
+  font-family: Krona One;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  /* 250% */
+}
+
+.description.mobile {
+  display: none;
+}
+
+.emailContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 217px;
+  height: 66px;
+  flex-shrink: 0;
+  display: flex;
+  border-radius: 47px;
+  border: 0.5px solid #4a4a4a;
+  background: rgba(18, 18, 18, 0.76);
+  backdrop-filter: blur(35px);
+  padding: 11px 10px;
+  gap: 11px;
+}
+
+.envelopIcon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 42px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(8px);
+}
+
+.textContainer {
+  color: #d9d9d9;
+  font-family: Krona One;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 260% */
+  letter-spacing: 0.05px;
+}
+
+.pointer {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    height: 520px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+
+  .container {
+    height: 447px;
+  }
+
+  .title {
+    color: #fff;
+    font-family: Krona One;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    /* 704.762% */
+    margin-bottom: 19px;
+    display: none;
+  }
+
+  .title.mobile {
+    display: block;
+  }
+
+  .description {
+    font-size: 14px;
+    display: none;
+  }
+
+  .description.mobile {
+    display: block;
+  }
+
+  .envelopIcon {
+    display: none;
+  }
+
+  .emailContainer {
+    height: 47px;
+  }
+}

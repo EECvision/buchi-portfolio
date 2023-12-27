@@ -1,0 +1,96 @@
+.wrapper {
+  margin-bottom: 97px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; /* 287.5% */
+}
+
+.description {
+  color: #7d8387;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: 0.98px;
+  /*  */
+  margin-bottom: 59px;
+}
+
+.animationContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.animationContainer img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animationA {
+  width: 429.268px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.animationB,
+.animationC {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.animation2 {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.animation3 {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.animation4 {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.animation5 {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 16px;
+    margin-bottom: 62px;
+  }
+
+  .animationContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,82 @@
+.main {
+  padding: 100px 0;
+  background: #396668;
+}
+
+.boxes {
+  background: pink;
+  padding: 100px 0;
+}
+
+ol {
+  list-style: none;
+  color: black;
+}
+.boxes ol li {
+  height: 100vh;
+  color: black;
+  text-align: center;
+  padding: 5% 0;
+  border-bottom: solid 1px #000000;
+}
+
+.boxes ol li {
+  color: black;
+  font-size: 3em;
+}
+
+.boxes ol li:hover {
+  background: none;
+  color: black;
+}
+.menu {
+  width: 90%;
+  background: #cccccc;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover {
+  background: red;
+}
+
+ul {
+  width: 50%;
+  margin: 0 auto;
+  background: rebeccapurple;
+  padding: 2% 1%;
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+  font-size: 1em;
+  list-style: none;
+  z-index: 999;
+  width: 100%;
+  opacity: 0;
+}
+
+li {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.footer {
+  height: 500px;
+  background: black;
+  color: white;
+  font-size: 1em;
+  padding: 2%;
+}
+
+header {
+  height: 300px;
+  background: black;
+  color: white;
+  font-size: 1em;
+  padding: 2%;
+}

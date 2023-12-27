@@ -1,0 +1,27 @@
+.enter {
+  animation: enter 1.25s forwards;
+}
+
+.leave {
+  animation: leave 1.25s forwards;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leave {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

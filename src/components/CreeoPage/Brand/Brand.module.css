@@ -1,0 +1,153 @@
+.container {
+  background: linear-gradient(180deg, #202124 0%, rgba(32, 33, 36, 0) 100%);
+  margin-bottom: 110px;
+  padding-top: 101px;
+}
+
+.container > img,
+.heading {
+  width: 100%;
+  height: auto;
+}
+
+.stages {
+  max-width: 1219px;
+  margin: 0 auto;
+}
+
+.stage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 68px;
+  gap: 48px;
+}
+
+.topic {
+  color: #fff;
+  font-family: Krona One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.topic > span:last-child {
+  position: relative;
+}
+
+.topic > span:last-child::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #14d3b2;
+  border-radius: 50%;
+  right: -16px;
+  bottom: 16px;
+}
+
+.text ul li,
+.text {
+  width: 100%;
+  max-width: 846px;
+  color: #7d8387;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  /* 193.75% */
+  letter-spacing: 1px;
+}
+
+.text span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  /* 193.75% */
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.brandA {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 17.41px;
+}
+
+.brandA img {
+  width: 100%;
+  height: auto;
+}
+
+.brandB {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.brandB img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    margin-bottom: 73px;
+  }
+
+  .stages {
+    padding: 0 32px;
+  }
+
+  .text {
+    max-width: 746px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .text {
+    max-width: 100%;
+  }
+
+  .stage {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stages {
+    padding: 16px;
+  }
+
+  .topic {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .topic > span:last-child::after {
+    bottom: 8px;
+  }
+
+  .text,
+  .text span {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
