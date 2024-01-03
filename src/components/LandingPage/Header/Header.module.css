@@ -277,7 +277,7 @@
     margin-bottom: 12px;
     font-size: 57.36px !important;
     font-weight: 800;
-    /* line-height: 57.513px; */
+    line-height: 67.513px;
     letter-spacing: 0.512px;
   }
 
@@ -306,6 +306,7 @@
 @media screen and (max-width: 540px) {
   .mainText {
     font-size: 48px !important;
+    line-height: 57.513px;
   }
 
   .mainText img {
