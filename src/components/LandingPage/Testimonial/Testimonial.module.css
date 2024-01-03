@@ -58,4 +58,18 @@
     justify-content: center;
     gap: 68px;
   }
+
+  .card {
+    transform: translateX(0);
+  }
+
+  .card.leave {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 119px;
+  }
 }

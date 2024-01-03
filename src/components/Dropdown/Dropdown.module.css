@@ -15,15 +15,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   transition: transform 100ms;
 }
 
 .burgerWrapper {
-  width: 100%;
+  width: max-content;
   max-width: 1440px;
   position: absolute;
   display: flex;
   justify-content: flex-end;
+  align-self: flex-end;
+  right: 32px;
+  top: 32px;
 }
 
 .harmburger {
@@ -33,25 +37,23 @@
   border: 1px solid #3e3e46;
   background: #0e0f0f;
   box-shadow: 8.08px 9.73px 36.81px 0px rgba(0, 0, 0, 0.08);
-  /*  */
-  position: absolute;
-  top: 28px;
-  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 7px;
-  transition: gap 300ms;
   cursor: pointer;
+  transition: gap 300ms, transform 150ms linear;
 }
 
-.harmburger.enter {
+.burgerWrapper.enter {
   animation: enter 300ms forwards cubic-bezier(0, 1.67, 1, 0.87);
+  /* visibility: visible; */
 }
 
-.harmburger.leave {
+.burgerWrapper.leave {
   animation: leave 100ms forwards linear;
+  /* visibility: hidden; */
 }
 
 @keyframes enter {
@@ -201,6 +203,13 @@
   cursor: pointer;
 }
 
+.menuItem.enter,
+.link.enter,
+.navItem.enter,
+.resumeLink.enter {
+  color: rgba(244, 130, 30, 1);
+}
+
 .socialLinks {
   color: #d1d1d1;
   font-family: Poppins;
@@ -235,8 +244,9 @@
   font-weight: 500;
   line-height: 22.175px; /* 138.593% */
   letter-spacing: 0.08px;
-  border-bottom: 1px solid #d9d9d9;
+  /* border-bottom: 1px solid #d9d9d9; */
   line-height: 14px;
+  text-decoration: underline;
   /*  */
   display: flex;
   align-items: center;
@@ -271,6 +281,14 @@
   align-items: center;
   justify-content: center;
   gap: 4px;
+}
+
+.btnText img {
+  transition: transform 450ms;
+}
+
+.btnText.enter img {
+  transform: rotate(45deg) translate(4px, -4px);
 }
 
 .right {

@@ -5,12 +5,8 @@ import { about } from "./data";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useState } from "react";
-import TextFade from "../../TextFade/TextFade";
 import TextSlideV2 from "../../TextSlideV2/TextSlideV2";
-// import type { IntersectionObserver as IntersectionObserverType } from "dom";
-
-const string =
-  "I'm a multidisciplinary Product Designer with 4+ years of experience in designing clean UIs & impactful user experiences";
+import TextFade from "../../TextFade/TextFade";
 
 const AboutMe = () => {
   const [state, setState] = useState<"enter" | "leave">("leave");
@@ -98,34 +94,50 @@ const AboutMe = () => {
     });
   }, []);
 
+  const desktopText = (
+    <div className={classes.mainText}>
+      <TextSlideV2 trigger={state === "enter"} delay={0.1}>
+        I'm a multidisciplinary Product Designer with
+      </TextSlideV2>
+      <TextSlideV2 trigger={state === "enter"} delay={0.2}>
+        4+ years of experience in designing clean
+      </TextSlideV2>
+      <TextSlideV2 trigger={state === "enter"} delay={0.3}>
+        UIs & impactful user experiences
+      </TextSlideV2>
+    </div>
+  );
+
+  const mobileText = (
+    <div className={`${classes.mainText} ${classes.mobile}`}>
+      <TextSlideV2 trigger={state === "enter"} delay={0.1}>
+        I'm a multidisciplinary Product
+      </TextSlideV2>
+      <TextSlideV2 trigger={state === "enter"} delay={0.2}>
+        Designer with 4+ years of
+      </TextSlideV2>
+      <TextSlideV2 trigger={state === "enter"} delay={0.3}>
+        experience in designing clean
+      </TextSlideV2>
+      <TextSlideV2 trigger={state === "enter"} delay={0.3}>
+        UIs & impactful user experiences
+      </TextSlideV2>
+    </div>
+  );
+
   return (
     <div id="About" className={`${classes.container} about`}>
       <div className={classes.wrapper}>
         <div className={classes.title}>
-          {"(About me)".split(" ").map((str, idx) => (
-            <TextSlideV2
-              key={idx}
-              trigger={state === "enter"}
-              delay={0.2 + idx * 0.01}
-            >
-              {str}
-            </TextSlideV2>
-          ))}
+          <TextSlideV2 trigger={state === "enter"} delay={0.3}>
+            {"(ABOUT ME)"}
+          </TextSlideV2>
         </div>
         <br />
         <br />
         <div className={classes.description}>
-          <div className={classes.mainText}>
-            {string.split(" ").map((str, idx) => (
-              <TextSlideV2
-                key={idx}
-                trigger={state === "enter"}
-                delay={0.2 + idx * 0.01}
-              >
-                {str}
-              </TextSlideV2>
-            ))}
-          </div>
+          {desktopText}
+          {mobileText}
           <TextFade trigger={state === "enter"} delay={0.6}>
             <div className={classes.text}>Currently designing @Bleuwater</div>
           </TextFade>

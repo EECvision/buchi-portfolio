@@ -21,7 +21,6 @@ const ProjectPage = ({ data }: ProjectProps) => {
         className={classes.imageContainer}
       >
         <img src={image} alt="" />
-        <div className={`${classes.imageOverlay} work-image-overlay`}></div>
       </div>
       <div className={classes.details}>
         <div className={classes.nameAndDescription}>

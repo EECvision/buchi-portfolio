@@ -16,9 +16,6 @@ export const Work = () => {
     const mm = gsap.matchMedia();
 
     const cards: HTMLDivElement[] = gsap.utils.toArray(".work-card");
-    const overlays: HTMLDivElement[] = gsap.utils.toArray(
-      ".work-image-overlay"
-    );
     const elements: HTMLDivElement[] = gsap.utils.toArray(".scroll-element");
 
     mm.add(
@@ -39,6 +36,7 @@ export const Work = () => {
         });
 
         elements.forEach((elem, idx) => {
+          elem.style.height = `${cards[idx].getBoundingClientRect().height}px`;
           gsap
             .timeline()
             .to(cards[idx], {
@@ -52,7 +50,10 @@ export const Work = () => {
               },
             })
             .to(cards[idx], {
-              scale: 1 - (elements.length - idx) * 0.04,
+              scale:
+                cards.length - 1 - idx > 0
+                  ? 1 - (elements.length - idx) * 0.06
+                  : 1,
               y: `${idx * 10}px`,
               scrollTrigger: {
                 trigger: elem,
@@ -61,15 +62,32 @@ export const Work = () => {
                 scrub: true,
               },
             })
-            .to(overlays[idx], {
-              background: "rgba(0, 0, 0, 0.5)",
-              scrollTrigger: {
-                trigger: elem,
-                start: "30% top",
-                end: "+=1000",
-                scrub: true,
+            .to(
+              cards[idx + 1],
+              {
+                boxShadow: "0px -92px 400px -68px rgba(0, 0, 0, 1)",
+                scrollTrigger: {
+                  trigger: elem,
+                  start: "top top",
+                  end: "+=1000",
+                  scrub: true,
+                },
               },
-            });
+              "0"
+            )
+            .to(
+              cards[idx],
+              {
+                boxShadow: "unset",
+                scrollTrigger: {
+                  trigger: elem,
+                  start: "top top",
+                  end: "+=1000",
+                  scrub: true,
+                },
+              },
+              "0"
+            );
         });
 
         ScrollTrigger.create({

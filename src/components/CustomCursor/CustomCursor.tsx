@@ -67,8 +67,8 @@ const CustomCursor = () => {
         positionRef.current.destinationX = mouseX;
         positionRef.current.destinationY = mouseY;
       } else {
-        positionRef.current.distanceX = (mouseX - destinationX) * 0.05;
-        positionRef.current.distanceY = (mouseY - destinationY) * 0.05;
+        positionRef.current.distanceX = (mouseX - destinationX) * 0.5;
+        positionRef.current.distanceY = (mouseY - destinationY) * 0.5;
         if (
           Math.abs(positionRef.current.distanceX) +
             Math.abs(positionRef.current.distanceY) <

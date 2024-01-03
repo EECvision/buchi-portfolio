@@ -272,7 +272,7 @@
     white-space: unset;
     text-align: left;
     margin-bottom: 12px;
-    font-size: 58.36px !important;
+    font-size: 57.36px !important;
     font-weight: 800;
     /* line-height: 57.513px; */
     letter-spacing: 0.512px;
@@ -284,5 +284,27 @@
 
   .text {
     padding: 0;
+  }
+
+  .btn {
+    width: 105px;
+    height: 105px;
+  }
+
+  .btnContent {
+    font-size: 11.014px;
+    font-weight: 700;
+    line-height: 14.499px; /* 131.637% */
+    letter-spacing: 0.165px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mainText {
+    font-size: 48px !important;
+  }
+
+  .mainText img {
+    width: 72px;
   }
 }

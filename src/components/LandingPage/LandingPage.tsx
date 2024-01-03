@@ -1,4 +1,4 @@
-// import CustomCursor from "../CustomCursor/CustomCursor";
+import CustomCursor from "../CustomCursor/CustomCursor";
 import Footer from "../Footer/Footer";
 import AboutMe from "./AboutMe/AboutMe";
 import Clients from "./Clients/Clients";
@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <div className={`${classes.container} landing-page`}>
       {/* <div id="overlay-all" className={classes.overlayAll}></div> */}
-      {/* <CustomCursor /> */}
+      <CustomCursor />
       {/* <div className={classes.fixedTop}></div> */}
       <div className={classes.grayArea}>
         <div
