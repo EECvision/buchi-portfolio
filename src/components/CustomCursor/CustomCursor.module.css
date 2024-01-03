@@ -63,3 +63,9 @@
 .reset .emailText {
   opacity: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .cursorWrapper {
+    display: none;
+  }
+}

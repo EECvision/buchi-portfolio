@@ -270,6 +270,7 @@
   }
 
   .aboutContainer {
+    width: 100%;
     gap: 42px;
   }
 
