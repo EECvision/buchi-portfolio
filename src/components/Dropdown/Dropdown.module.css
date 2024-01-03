@@ -350,6 +350,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .burgerWrapper {
+    right: 16px;
+  }
+
   .harmburger {
     height: 56px;
     width: 56px;

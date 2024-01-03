@@ -85,6 +85,13 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    position: static;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .imageContainer img {
     border-top-right-radius: 0;
@@ -93,6 +100,8 @@
 
   .details {
     flex-direction: column;
+    padding: 16px;
+    padding-bottom: 24px;
   }
 
   .count {
@@ -118,13 +127,5 @@
 
   .link {
     align-self: flex-end;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container {
-    /* height: 80vh; */
-    position: static;
-    height: auto;
   }
 }

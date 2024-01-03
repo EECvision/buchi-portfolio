@@ -12,21 +12,21 @@ const Testimonial = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const mm = gsap.matchMedia();
+    // const mm = gsap.matchMedia();
 
-    mm.add("(min-width: 1025PX)", () => {
-      ScrollTrigger.create({
-        trigger: ".testimonial",
-        start: "top 80%",
-        end: "bottom top",
-        onLeaveBack: () => {
-          setState("leave");
-        },
-        onEnter: () => {
-          setState("enter");
-        },
-      });
+    // mm.add("(min-width: 1025PX)", () => {
+    ScrollTrigger.create({
+      trigger: ".testimonial",
+      start: "top 80%",
+      end: "bottom top",
+      onLeaveBack: () => {
+        setState("leave");
+      },
+      onEnter: () => {
+        setState("enter");
+      },
     });
+    // });
   }, []);
 
   return (

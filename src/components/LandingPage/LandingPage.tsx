@@ -36,7 +36,6 @@ const LandingPage = () => {
         <div data-scroll data-scroll-speed="-0.1" className={classes.wrapper}>
           <Contact />
           <Footer />
-          <div style={{ height: "100vh" }}></div>
         </div>
       </div>
     </div>

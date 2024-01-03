@@ -8,12 +8,6 @@
   position: relative;
 }
 
-.imagePlaceholder,
-.imageContainer {
-  top: -24px;
-  transform: translateX(-40px);
-}
-
 .elipse {
   width: 1079px;
   height: 1079px;
@@ -22,7 +16,22 @@
   background: rgb(244, 130, 30, 0.6);
   filter: blur(80px);
   transform: translateY(-35%);
-  border: 4px solid red;
+}
+
+.imageContainer,
+.imagePlaceholder,
+.image {
+  width: 486.896px;
+  position: absolute;
+}
+
+.imagePlaceholder {
+  transform: translateX(-40px);
+}
+
+.imagePlaceholder,
+.imageContainer {
+  top: -24px;
 }
 
 .imagePlaceholder {
@@ -34,13 +43,6 @@
   user-select: none;
   pointer-events: none;
   transition: all 100ms linear;
-}
-
-.imageContainer,
-.imagePlaceholder,
-.image {
-  width: 486.896px;
-  position: absolute;
 }
 
 .desktop {
@@ -216,7 +218,7 @@
 @media screen and (max-width: 768px) {
   .container {
     height: auto;
-    padding: 0 24px;
+    padding: 0 16px;
     padding-top: 95px;
     justify-content: flex-start;
   }
@@ -239,7 +241,8 @@
 
   .imageContainer,
   .image {
-    width: 436px;
+    width: 100%;
+    max-width: 436px;
     position: static;
   }
 

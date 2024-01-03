@@ -49,13 +49,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .title {
+  /* .title {
     text-align: center;
-  }
+  } */
 
   .wrapper {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 68px;
   }
 
