@@ -117,8 +117,6 @@ const Dropdown = () => {
         cursorPosition.x * 0.2
       }px, ${cursorPosition.y * 0.3}px)`;
     }
-
-    console.log(cursorPosition);
   }, [cursorPosition]);
 
   return (
