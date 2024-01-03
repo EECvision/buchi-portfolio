@@ -36,7 +36,7 @@
   font-weight: 800;
   letter-spacing: 0.91px;
   text-transform: uppercase;
-  padding: 64px 0;
+  padding: 48px 0;
   position: relative;
 }
 
@@ -65,13 +65,17 @@
   /* box-shadow: 8.08px 9.73px 36.81px 0px rgba(0, 0, 0, 0.08); */
 }
 
+.btnOverlay {
+  background: #f4821e;
+}
+
 .btnText {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 9px;
   /*  */
-  color: #d1d1d1;
+  color: #fff;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -79,12 +83,6 @@
   line-height: 18.307px; /* 114.417% */
   letter-spacing: 0.24px;
   text-transform: uppercase;
-}
-
-.box {
-  width: 200px;
-  height: 200px;
-  background: yellow;
 }
 
 .boxText {
