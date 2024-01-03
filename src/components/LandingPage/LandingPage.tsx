@@ -14,7 +14,6 @@ const LandingPage = () => {
     <div className={`${classes.container} landing-page`}>
       {/* <div id="overlay-all" className={classes.overlayAll}></div> */}
       <CustomCursor />
-      {/* <div className={classes.fixedTop}></div> */}
       <div className={classes.grayArea}>
         <div
           id="nav-wrapper"
