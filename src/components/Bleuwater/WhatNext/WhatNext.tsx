@@ -1,4 +1,4 @@
-import classes from "./WhatNext.module.css";
+// import classes from "./WhatNext.module.css";
 
 const WhatNext = () => {
   return <div></div>;

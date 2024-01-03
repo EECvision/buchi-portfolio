@@ -1,11 +1,10 @@
 import classes from "./Playground.module.css";
 import playgroundImg from "../../../assets/landing-page/playground.png";
-import Image from "next/image";
 
 const Playground = () => {
   return (
     <div id="Playground" className={classes.container}>
-      <Image className={classes.heading} src={playgroundImg} alt="" />
+      <img className={classes.heading} src={playgroundImg} alt="" />
       <div className={classes.description}>
         A collection of concepts, experiments, and other side-projects I&apos;ve
         worked on.

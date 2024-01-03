@@ -3,7 +3,9 @@ import classes from "./youtube.1.module.css";
 
 const Youtube = () => {
   useEffect(() => {
-    let cards = document.querySelector("#container").children;
+    const cards = document.querySelector("#container")?.children;
+
+    if (!cards) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -15,7 +17,7 @@ const Youtube = () => {
       { threshold: 0.5, rootMargin: "-50px" }
     );
 
-    for (let card of cards) {
+    for (const card of cards) {
       observer.observe(card);
     }
   }, []);

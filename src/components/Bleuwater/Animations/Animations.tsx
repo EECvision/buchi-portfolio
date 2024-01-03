@@ -1,4 +1,4 @@
-import classes from "./Animations.module.css";
+// import classes from "./Animations.module.css";
 
 const Animations = () => {
   return <div></div>;
