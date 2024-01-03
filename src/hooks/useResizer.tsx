@@ -1,12 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef } from "react";
+import useWindowWidth from "./useWindowWidth";
 
 const useResizer = () => {
   const resizeTimer = useRef<any>(0);
+  const { width } = useWindowWidth();
 
   useEffect(() => {
     function handleResizeEnd() {
-      // window.location.reload();
+      if (width > 720 && width < 768) {
+        // window.location.reload();
+      }
     }
 
     function debounce(callback: () => void, delay: number) {
@@ -16,10 +20,10 @@ const useResizer = () => {
       };
     }
 
-    window.addEventListener("resize", debounce(handleResizeEnd, 200));
+    window.addEventListener("resize", debounce(handleResizeEnd, 0));
 
     return () => {
-      window.removeEventListener("resize", debounce(handleResizeEnd, 200));
+      window.removeEventListener("resize", debounce(handleResizeEnd, 0));
     };
   });
 };

@@ -247,10 +247,14 @@
   }
 
   .imagePlaceholder {
-    width: max-content;
-    bottom: 300px;
+    width: 100%;
+    max-width: 436px;
+    bottom: 280px;
     top: unset;
-    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(0);
+    padding-right: 16px;
   }
 
   .connectContainer {
