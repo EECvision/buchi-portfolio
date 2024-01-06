@@ -100,6 +100,26 @@ export const Work = () => {
         });
       }
     );
+
+    gsap
+      .timeline()
+      .to(".work-label", {
+        scrollTrigger: {
+          trigger: "#scroll-window",
+          start: "top 3.5%",
+          end: "bottom bottom",
+          pin: ".work-label",
+        },
+      })
+      .to(".work-label", {
+        yPercent: "-100",
+        scrollTrigger: {
+          trigger: "#scroll-window",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: true,
+        },
+      });
   }, []);
 
   return (
@@ -107,6 +127,7 @@ export const Work = () => {
       <div id="Work" className={`${classes.container} work`}>
         <div className={classes.wrapper}>
           <div className={`${classes.scrollWrapper} work-scroll`}>
+            <div className={`${classes.label} work-label`}>Featured Works</div>
             <div className={`${classes.projects} work-projects`}>
               {projects.map((project, idx) => (
                 <ProjectPage data={project} key={idx} />
