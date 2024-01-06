@@ -303,7 +303,7 @@
 
 @media screen and (max-width: 1440px) {
   .burgerWrapper {
-    right: 24px;
+    right: 48px;
   }
 
   .contentWrapper {
@@ -350,7 +350,7 @@
 
 @media screen and (max-width: 768px) {
   .burgerWrapper {
-    right: 16px;
+    right: 24px;
     top: 23px;
   }
 
@@ -396,6 +396,10 @@
 }
 
 @media screen and (max-width: 540px) {
+  .burgerWrapper {
+    right: 16px;
+  }
+
   .content {
     padding-left: 0;
     padding-right: 2px;
