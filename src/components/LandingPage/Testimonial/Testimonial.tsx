@@ -26,7 +26,6 @@ const Testimonial = () => {
             trigger: card,
             start: "top bottom",
             end: "bottom top",
-            markers: true,
           },
         });
       });
