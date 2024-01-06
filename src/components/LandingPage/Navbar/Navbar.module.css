@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1377px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -77,18 +77,25 @@
 
 @media screen and (max-width: calc(1440px + 24px)) {
   .container {
-    padding: 0 24px;
+    padding: 0 48px;
     padding-top: 23px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 16px;
+    padding: 0 24px;
     padding-top: 38px;
   }
 
   .nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

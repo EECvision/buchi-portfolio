@@ -6,7 +6,7 @@
 
 .wrapper {
   width: 100%;
-  max-width: 1360px;
+  max-width: 1377px;
   margin: 0 auto;
   padding-bottom: 229px;
 }
@@ -179,7 +179,7 @@
 
 @media screen and (max-width: calc(1440px + 24px)) {
   .container {
-    padding: 0 24px;
+    padding: 0 48px;
     padding-top: 96px;
   }
 }
@@ -232,7 +232,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 16px;
+    padding: 0 24px;
     padding-top: 40px;
     margin-bottom: 109px;
   }
@@ -285,6 +285,11 @@
 }
 
 @media screen and (max-width: 580px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .mainText {
     font-size: 20px;
     display: none;

@@ -17,8 +17,6 @@
   z-index: 1;
   width: 100%;
   height: 100%;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
   display: none;
 }
 
@@ -26,8 +24,6 @@
   width: 100%;
   height: auto;
   margin-bottom: -4px;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
 }
 
 .details {
@@ -100,7 +96,7 @@
 
   .details {
     flex-direction: column;
-    padding: 16px;
+    padding: 24px;
     padding-bottom: 24px;
   }
 
@@ -127,5 +123,12 @@
 
   .link {
     align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .details {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

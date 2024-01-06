@@ -32,7 +32,7 @@
 
 .wrapper {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1377px;
   margin: 0 auto;
 }
 
@@ -69,7 +69,7 @@
 
 @media screen and (max-width: calc(1440px + 24px)) {
   .wrapper {
-    padding: 0 24px;
+    padding: 0 48px;
   }
 }
 
@@ -83,6 +83,13 @@
   }
 
   .wrapper {
-    padding: 0 16px;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

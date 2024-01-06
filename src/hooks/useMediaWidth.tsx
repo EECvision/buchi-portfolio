@@ -5,7 +5,7 @@ const useMediaWidth = () => {
   const resizeTimer = useRef<any>(0);
   const timerId = useRef<any>(0);
 
-  const [mediaWidth, setMediaWidth] = useState(1440);
+  const [mediaWidth, setMediaWidth] = useState(1377);
 
   const updateMediaWidth = async () => {
     const mainTextRef = document.getElementById("main-text");
@@ -14,13 +14,13 @@ const useMediaWidth = () => {
 
     const leftOfMainText = mainTextRef?.getBoundingClientRect().left;
 
-    if (leftOfMainText < 24) {
+    if (leftOfMainText < 48) {
       clearTimeout(timerId.current);
 
       let left = leftOfMainText;
       let width = mainTextRef.getBoundingClientRect().width;
 
-      while (left < 24 && width >= 740) {
+      while (left < 48 && width >= 716) {
         await new Promise((res) => {
           timerId.current = setTimeout(() => {
             const computedStyle = window.getComputedStyle(mainTextRef);
@@ -40,12 +40,12 @@ const useMediaWidth = () => {
       const computedStyle = window.getComputedStyle(mainTextRef);
       let fontSize = computedStyle.getPropertyValue("font-size");
 
-      while (left > 32 && parseInt(fontSize) <= 106) {
+      while (left > 64 && parseInt(fontSize) <= 101) {
         await new Promise((res) => {
           timerId.current = setTimeout(() => {
             fontSize = computedStyle.getPropertyValue("font-size");
             mainTextRef.style.fontSize =
-              parseInt(fontSize) > 106
+              parseInt(fontSize) > 101
                 ? `${parseInt(fontSize)}px`
                 : `${parseInt(fontSize) + 1}px`;
             left = mainTextRef?.getBoundingClientRect().left;

@@ -141,7 +141,7 @@
   width: max-content;
   color: #fff;
   font-family: Monument Extended Ultrabold;
-  font-size: 106px;
+  font-size: 101px;
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
@@ -218,7 +218,7 @@
 @media screen and (max-width: 768px) {
   .container {
     height: auto;
-    padding: 0 16px;
+    padding: 0 24px;
     padding-top: 95px;
     justify-content: flex-start;
   }
@@ -308,6 +308,10 @@
 }
 
 @media screen and (max-width: 540px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .mainText {
     font-size: 48px !important;
     line-height: 57.513px;
