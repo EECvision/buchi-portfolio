@@ -40,7 +40,7 @@ const Testimonial = () => {
           yPercent: "50",
           delay: idx === 0 ? 0.05 : idx === 1 ? 0.1 : 0.125,
           scrollTrigger: {
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none reset",
             trigger: card,
             start: "top bottom",
             end: "bottom top",
