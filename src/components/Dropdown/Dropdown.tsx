@@ -149,7 +149,7 @@ const Dropdown = () => {
         }`}
       >
         <div className={classes.content}>
-          <TextFade trigger={toggleCross} delay={1.8}>
+          <TextFade trigger={toggleCross} delay={1.25}>
             <div className={classes.menu}>
               <CustomDragV2
                 onClick={handleHome}
@@ -256,7 +256,7 @@ const Dropdown = () => {
                 </TextSlide>
               </div>
               <div className={classes.socialLinks}>
-                <TextFade trigger={toggleCross} delay={1.8}>
+                <TextFade trigger={toggleCross} delay={1.25}>
                   <CustomDragV2
                     // onClick={() => handleLink("Work")}
                     customRef={twitterRef}
@@ -279,7 +279,7 @@ const Dropdown = () => {
                   </CustomDragV2>
                 </TextFade>
 
-                <TextFade trigger={toggleCross} delay={1.82}>
+                <TextFade trigger={toggleCross} delay={1.27}>
                   <CustomDragV2
                     // onClick={() => handleLink("Work")}
                     customRef={linkedinRef}
@@ -302,7 +302,7 @@ const Dropdown = () => {
                   </CustomDragV2>
                 </TextFade>
 
-                <TextFade trigger={toggleCross} delay={1.84}>
+                <TextFade trigger={toggleCross} delay={1.29}>
                   <CustomDragV2
                     // onClick={() => handleLink("Work")}
                     customRef={dribbleRef}
@@ -325,7 +325,7 @@ const Dropdown = () => {
                   </CustomDragV2>
                 </TextFade>
               </div>
-              <TextFade trigger={toggleCross} delay={1.86}>
+              <TextFade trigger={toggleCross} delay={1.31}>
                 <CustomDragV2
                   // onClick={() => handleDownload}
                   customRef={downloadRef}
