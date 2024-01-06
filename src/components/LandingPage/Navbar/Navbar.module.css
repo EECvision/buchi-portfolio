@@ -39,25 +39,25 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgba(242, 153, 74, 1);
+  background: rgb(244, 130, 30, 1);
   animation: pulse 1250ms infinite linear;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0px 0px rgba(242, 153, 74, 0.16);
+    box-shadow: 0 0 0px 0px rgba(244, 130, 30, 0.16);
   }
   20% {
-    box-shadow: 0 0 0px 2px rgba(242, 153, 74, 0.26);
+    box-shadow: 0 0 0px 2px rgba(244, 130, 30, 0.26);
   }
   40% {
-    box-shadow: 0 0 0px 4px rgba(242, 153, 74, 0.56);
+    box-shadow: 0 0 0px 4px rgba(244, 130, 30, 0.56);
   }
   60% {
-    box-shadow: 0 0 0px 6px rgba(242, 153, 74, 0.26);
+    box-shadow: 0 0 0px 6px rgba(244, 130, 30, 0.26);
   }
   100% {
-    box-shadow: 0 0 0px 7px rgba(242, 153, 74, 0);
+    box-shadow: 0 0 0px 7px rgba(244, 130, 30, 0);
   }
 }
 

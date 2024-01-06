@@ -68,7 +68,7 @@ const Navbar = () => {
             <div className={classes.item}>
               <span>Resume</span>
               <img src={ArrowDown} alt="" />
-            </div>{" "}
+            </div>
           </CustomButtonV2>
         </CustomDragV2>
       </div>

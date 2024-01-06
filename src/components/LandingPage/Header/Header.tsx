@@ -4,6 +4,7 @@ import classes from "./Header.module.css";
 import buchi from "../../../assets/landing-page/buchi-image.png";
 import { useRef, useState } from "react";
 import pointerIcon from "../../../assets/landing-page/icon-pointer.svg";
+import pointerIconAccent from "../../../assets/landing-page/icon-pointer-accent.svg";
 import CustomDragV2, { MouseTrack } from "../../CustomDragV2/CustomDragV2";
 import { MouseDirection } from "../../../hooks/UseMouseDirection2";
 import useMediaWidth from "../../../hooks/useMediaWidth";
@@ -73,7 +74,11 @@ const Header = () => {
                     ]
                   }`}
                 >
-                  <img src={pointerIcon} />
+                  {mouseTrack === "enter" ? (
+                    <img src={pointerIcon} />
+                  ) : (
+                    <img src={pointerIconAccent} />
+                  )}
                 </div>
               </div>
             </CustomButtonV2>
