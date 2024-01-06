@@ -13,9 +13,6 @@ const AboutMe = () => {
   const [intersectCount, setIntersectCount] = useState(0);
 
   useEffect(() => {
-    let observer: any;
-    const cards: HTMLDivElement[] = gsap.utils.toArray(".about-card");
-
     gsap.registerPlugin(ScrollTrigger);
 
     ScrollTrigger.create({
@@ -49,7 +46,7 @@ const AboutMe = () => {
         pinSpacing: false,
       });
 
-      gsap.timeline().from(".about-image-2", {
+      gsap.from(".about-image-2", {
         scale: 0.55,
         opacity: 0.1,
         scrollTrigger: {
@@ -59,38 +56,37 @@ const AboutMe = () => {
           scrub: true,
         },
       });
+    });
 
-      const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: [0.25],
-      };
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: [0.5],
+    };
 
-      const callback = (entries: any) => {
-        entries.map((entry: any) => {
-          if (entry.isIntersecting) {
-            gsap.to(entry.target, {
-              opacity: 1,
-              duration: 1,
-              yPercent: "0",
-            });
-            const count = entry.target.getAttribute("data-about-card");
-            setIntersectCount(count);
-          } else {
-            gsap.to(entry.target, {
-              opacity: 0,
-              duration: 1,
-              yPercent: "0",
-            });
-          }
-        });
-      };
-
-      observer = new IntersectionObserver(callback, options);
-
-      cards.forEach((card: any) => {
-        observer.observe(card);
+    const callback = (entries: any) => {
+      entries.map((entry: any) => {
+        if (entry.isIntersecting) {
+          gsap.to(entry.target, {
+            opacity: 1,
+            duration: 0.65,
+          });
+          const count = entry.target.getAttribute("data-about-card");
+          setIntersectCount(count);
+        } else {
+          gsap.to(entry.target, {
+            opacity: 0,
+            duration: 0.65,
+          });
+        }
       });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    const cards: HTMLDivElement[] = gsap.utils.toArray(".about-card");
+
+    cards.forEach((card: any) => {
+      observer.observe(card);
     });
   }, []);
 

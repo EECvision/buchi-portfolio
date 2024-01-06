@@ -8,11 +8,11 @@
   width: max-content;
   position: relative;
   transform: translateY(10px);
-  transition: all 650ms cubic-bezier(0.8, 0.18, 0.41, 1.03);
+  transition: all 650ms ease-in-out;
 }
 
 .icons .quote {
-  transition: all 300ms cubic-bezier(0.8, 0.18, 0.41, 1.03);
+  transition: all 300ms ease-in-out;
 }
 
 .quote:first-child {
@@ -22,6 +22,7 @@
 .quote:nth-child(2) {
   visibility: hidden;
 }
+
 .container:hover .icons {
   transform: translateY(0);
 }
@@ -66,9 +67,9 @@
   height: 1px;
   background: rgba(242, 153, 74, 1);
   margin-top: 24px;
-  transition: all 650ms cubic-bezier(0.8, 0.18, 0.41, 1.03);
+  transition: all 650ms ease-in-out;
 }
-
+/* cubic-bezier(0.8, 0.18, 0.41, 1.03) */
 .container:hover .underline {
   width: 100%;
 }

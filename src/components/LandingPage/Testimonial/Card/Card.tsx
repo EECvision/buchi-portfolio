@@ -10,17 +10,25 @@ interface CardProps {
 
 const Card = ({ name, review, project }: CardProps) => {
   return (
-    <div className={classes.container}>
-      <div className={classes.icons}>
-        <img className={classes.quote} src={QuoteOutlined} alt="" />
-        <img className={classes.quote} src={QuoteFilled} alt="" />
+    <div className={`${classes.container} testimonial-inner-card`}>
+      <div className={`${classes.icons} testimonial-card-icons`}>
+        <img
+          className={`${classes.quote} testimonial-card-quote`}
+          src={QuoteOutlined}
+          alt=""
+        />
+        <img
+          className={`${classes.quote} testimonial-card-quote`}
+          src={QuoteFilled}
+          alt=""
+        />
       </div>
 
       <div className={classes.review}>{review}</div>
 
       <div className={classes.name}>{name}</div>
       <div className={classes.project}>{project}</div>
-      <div className={classes.underline}></div>
+      <div className={`${classes.underline} testimonial-card-underline`}></div>
     </div>
   );
 };

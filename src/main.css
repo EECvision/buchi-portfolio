@@ -242,3 +242,15 @@ body {
     transform: translate(0, 0);
   }
 }
+
+.testimonial-inner-card.enter .testimonial-card-underline {
+  width: 100%;
+}
+
+.testimonial-inner-card.enter .testimonial-card-icons {
+  transform: translateY(0);
+}
+
+.testimonial-inner-card.enter .testimonial-card-quote:nth-child(2) {
+  visibility: visible;
+}

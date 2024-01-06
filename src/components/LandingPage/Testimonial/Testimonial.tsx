@@ -12,12 +12,53 @@ const Testimonial = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // const mm = gsap.matchMedia();
+    const cards: HTMLDivElement[] = gsap.utils.toArray(".testimonial-card");
 
-    // mm.add("(min-width: 1025PX)", () => {
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 1025PX)", () => {
+      cards.forEach((card, idx) => {
+        gsap.from(card, {
+          yPercent: "50",
+          delay: idx === 0 ? 0.1 : idx === 1 ? 0.2 : 0.25,
+          scrollTrigger: {
+            toggleActions: "play none none reset",
+            trigger: card,
+            start: "top bottom",
+            end: "bottom top",
+            markers: true,
+          },
+        });
+      });
+    });
+
+    mm.add("(max-width: 1024PX)", () => {
+      cards.forEach((card, idx) => {
+        const innerCard = document.getElementsByClassName(
+          "testimonial-inner-card"
+        )[idx];
+        gsap.from(card, {
+          yPercent: "50",
+          delay: idx === 0 ? 0.05 : idx === 1 ? 0.1 : 0.125,
+          scrollTrigger: {
+            toggleActions: "play none none reverse",
+            trigger: card,
+            start: "top 80%",
+            end: "bottom top",
+            onLeaveBack: () => {
+              innerCard.classList.remove("enter");
+            },
+            onEnter: () => {
+              innerCard.classList.add("enter");
+            },
+          },
+        });
+      });
+    });
+
     ScrollTrigger.create({
       trigger: ".testimonial",
-      start: "top 80%",
+      start: "top bottom",
       end: "bottom top",
       onLeaveBack: () => {
         setState("leave");
@@ -26,7 +67,6 @@ const Testimonial = () => {
         setState("enter");
       },
     });
-    // });
   }, []);
 
   return (
@@ -37,7 +77,7 @@ const Testimonial = () => {
         </TextFade>
         <div id="cardContainer" className={`${classes.wrapper}`}>
           {data.map((d, idx) => (
-            <div className={`${classes.card} ${classes[state]}`} key={idx}>
+            <div className={`${classes.card} testimonial-card`} key={idx}>
               <Card {...d} />
             </div>
           ))}
