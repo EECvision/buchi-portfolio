@@ -42,7 +42,7 @@ const Testimonial = () => {
           scrollTrigger: {
             toggleActions: "play none none reverse",
             trigger: card,
-            start: "top 80%",
+            start: "top bottom",
             end: "bottom top",
             onLeaveBack: () => {
               innerCard.classList.remove("enter");

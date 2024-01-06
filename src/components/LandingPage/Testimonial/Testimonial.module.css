@@ -31,7 +31,7 @@
   .wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 68px;
+    gap: 128px;
   }
 }
 
