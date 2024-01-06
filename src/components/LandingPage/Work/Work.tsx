@@ -106,7 +106,7 @@ export const Work = () => {
       .to(".work-label", {
         scrollTrigger: {
           trigger: "#scroll-window",
-          start: "top 3.5%",
+          start: "top 3.7%",
           end: "bottom bottom",
           pin: ".work-label",
         },
