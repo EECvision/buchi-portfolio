@@ -69,7 +69,7 @@ const AboutMe = () => {
         if (entry.isIntersecting) {
           gsap.to(entry.target, {
             opacity: 1,
-            duration: 0.65,
+            duration: 1.65,
           });
           const count = entry.target.getAttribute("data-about-card");
           setIntersectCount(count);
