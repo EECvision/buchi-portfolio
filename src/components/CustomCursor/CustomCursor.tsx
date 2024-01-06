@@ -9,6 +9,7 @@ const CustomCursor = () => {
 
   const [scratchPad, setScratchPad] = useState(cursorData);
   const [reset, setReset] = useState(false);
+  const [copy, setCopy] = useState(false);
   const timerId = useRef<any>(0);
 
   const { size, component } = scratchPad;
@@ -38,7 +39,7 @@ const CustomCursor = () => {
   }, [cursorData]);
 
   useEffect(() => {
-    document.addEventListener("mousemove", (event) => {
+    const mouseMoveEvent = document.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
 
       const mouseX = clientX;
@@ -49,7 +50,24 @@ const CustomCursor = () => {
       positionRef.current.mouseY = mouseY - cursorRef.current.clientHeight / 2;
     });
 
-    return () => {};
+    const mouseDownEvent = document.addEventListener(
+      "mousedown",
+      (event: any) => {
+        if (event.target && event.target.closest(`.contact-mainText`)) {
+          event.stopPropagation();
+          navigator.clipboard.writeText("Hello@buchi.com");
+          setCopy(true);
+          setTimeout(() => {
+            setCopy(false);
+          }, 650);
+        }
+      }
+    );
+
+    return () => {
+      mouseMoveEvent;
+      mouseDownEvent;
+    };
   }, []);
 
   useEffect(() => {
@@ -102,7 +120,13 @@ const CustomCursor = () => {
         {component === "email" && (
           <div className={`${classes.email} ${classes[size]}`}>
             <div className={classes.emailText}>
-              Click to <br /> copy
+              {copy ? (
+                <>Copied</>
+              ) : (
+                <>
+                  Click to <br /> copy
+                </>
+              )}
             </div>
           </div>
         )}

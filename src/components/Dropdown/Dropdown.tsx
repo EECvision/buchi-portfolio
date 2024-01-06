@@ -11,9 +11,12 @@ import CustomDragV2, {
   MouseTrack,
 } from "../CustomDragV2/CustomDragV2";
 import CustomButtonV2 from "../CustomButtonV2/CustomButtonV2";
-import connectIcon from "../../assets/icon-connect-2.png";
+import pointerIcon from "../../assets/landing-page/icon-pointer.svg";
+import pointerIconAccent from "../../assets/landing-page/icon-pointer-accent.svg";
+
 import useWindowWidth from "../../hooks/useWindowWidth";
 import homeIcon from "../../assets/landing-page/icon-home.svg";
+import homeIconAccent from "../../assets/landing-page/icon-home-accent.svg";
 import downloadIcon from "../../assets/download-icon.svg";
 
 const Dropdown = () => {
@@ -62,10 +65,6 @@ const Dropdown = () => {
   const handleMouseTrack = (e: MouseTrack, key: string) => {
     setMouseTrack((track) => ({ ...track, [key]: e }));
   };
-
-  useEffect(() => {
-    console.log(mouseTrack["harmburger"]);
-  }, [mouseTrack]);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -159,8 +158,8 @@ const Dropdown = () => {
               >
                 <CustomButtonV2
                   layoutClass={classes.layout}
-                  offsetContainer={{ x: 0.05, y: 0.2 }}
-                  offsetContent={{ x: 0.05, y: 0.2 }}
+                  offsetContainer={{ x: 0.1, y: 0.2 }}
+                  offsetContent={{ x: 0.01, y: 0.2 }}
                   ref={homeRef}
                 >
                   <div
@@ -168,7 +167,11 @@ const Dropdown = () => {
                       classes[mouseTrack["home"]]
                     }`}
                   >
-                    <img src={homeIcon} alt="" />
+                    {mouseTrack["home"] === "enter" ? (
+                      <img src={homeIconAccent} alt="" />
+                    ) : (
+                      <img src={homeIcon} alt="" />
+                    )}
                     <div>Home</div>
                   </div>
                 </CustomButtonV2>
@@ -177,7 +180,7 @@ const Dropdown = () => {
           </TextFade>
           <div className={classes.center}>
             <div className={classes.nav}>
-              <TextSlide delay={0.65} trigger={toggleCross}>
+              <TextSlide delay={0.35} trigger={toggleCross}>
                 <CustomDragV2
                   onClick={() => handleScrollIntoView("Work")}
                   customRef={workRef}
@@ -185,8 +188,8 @@ const Dropdown = () => {
                 >
                   <CustomButtonV2
                     layoutClass={classes.layout}
-                    offsetContainer={{ x: 0.05, y: 0.1 }}
-                    offsetContent={{ x: 0.05, y: 0.1 }}
+                    offsetContainer={{ x: 0.1, y: 0.1 }}
+                    offsetContent={{ x: 0.01, y: 0.1 }}
                     ref={workRef}
                   >
                     <div
@@ -200,7 +203,7 @@ const Dropdown = () => {
                 </CustomDragV2>
               </TextSlide>
 
-              <TextSlide delay={0.67} trigger={toggleCross}>
+              <TextSlide delay={0.38} trigger={toggleCross}>
                 <CustomDragV2
                   onClick={() => handleScrollIntoView("About")}
                   customRef={aboutRef}
@@ -208,8 +211,8 @@ const Dropdown = () => {
                 >
                   <CustomButtonV2
                     layoutClass={classes.layout}
-                    offsetContainer={{ x: 0.05, y: 0.1 }}
-                    offsetContent={{ x: 0.05, y: 0.1 }}
+                    offsetContainer={{ x: 0.1, y: 0.1 }}
+                    offsetContent={{ x: 0.01, y: 0.1 }}
                     ref={aboutRef}
                   >
                     <div
@@ -223,7 +226,7 @@ const Dropdown = () => {
                 </CustomDragV2>
               </TextSlide>
 
-              <TextSlide delay={0.68} trigger={toggleCross}>
+              <TextSlide delay={0.4} trigger={toggleCross}>
                 <CustomDragV2
                   onClick={() => handleScrollIntoView("Contact")}
                   customRef={contactRef}
@@ -231,8 +234,8 @@ const Dropdown = () => {
                 >
                   <CustomButtonV2
                     layoutClass={classes.layout}
-                    offsetContainer={{ x: 0.05, y: 0.1 }}
-                    offsetContent={{ x: 0.05, y: 0.1 }}
+                    offsetContainer={{ x: 0.1, y: 0.1 }}
+                    offsetContent={{ x: 0.01, y: 0.1 }}
                     ref={contactRef}
                   >
                     <div
@@ -248,7 +251,7 @@ const Dropdown = () => {
             </div>
             <div className={classes.right}>
               <div className={classes.connectText}>
-                <TextSlide trigger={toggleCross} delay={1.5}>
+                <TextSlide trigger={toggleCross} delay={0.9}>
                   <div className={`${classes.link} `}>Hey.. Let's connect</div>
                 </TextSlide>
               </div>
@@ -261,8 +264,8 @@ const Dropdown = () => {
                   >
                     <CustomButtonV2
                       layoutClass={classes.layout}
-                      offsetContainer={{ x: 0.05, y: 0.2 }}
-                      offsetContent={{ x: 0.05, y: 0.2 }}
+                      offsetContainer={{ x: 0.1, y: 0.2 }}
+                      offsetContent={{ x: 0.01, y: 0.2 }}
                       ref={twitterRef}
                     >
                       <div
@@ -284,8 +287,8 @@ const Dropdown = () => {
                   >
                     <CustomButtonV2
                       layoutClass={classes.layout}
-                      offsetContainer={{ x: 0.05, y: 0.2 }}
-                      offsetContent={{ x: 0.05, y: 0.2 }}
+                      offsetContainer={{ x: 0.1, y: 0.2 }}
+                      offsetContent={{ x: 0.01, y: 0.2 }}
                       ref={linkedinRef}
                     >
                       <div
@@ -307,8 +310,8 @@ const Dropdown = () => {
                   >
                     <CustomButtonV2
                       layoutClass={classes.layout}
-                      offsetContainer={{ x: 0.05, y: 0.2 }}
-                      offsetContent={{ x: 0.05, y: 0.2 }}
+                      offsetContainer={{ x: 0.1, y: 0.2 }}
+                      offsetContent={{ x: 0.01, y: 0.2 }}
                       ref={dribbleRef}
                     >
                       <div
@@ -330,8 +333,8 @@ const Dropdown = () => {
                 >
                   <CustomButtonV2
                     layoutClass={classes.layout}
-                    offsetContainer={{ x: 0.05, y: 0.2 }}
-                    offsetContent={{ x: 0.05, y: 0.2 }}
+                    offsetContainer={{ x: 0.1, y: 0.2 }}
+                    offsetContent={{ x: 0.01, y: 0.2 }}
                     ref={downloadRef}
                   >
                     <div
@@ -353,11 +356,20 @@ const Dropdown = () => {
               customRef={btnRef}
               onMouseTrack={(e) => handleMouseTrack(e, "btn")}
             >
-              <CustomButtonV2 layoutClass={classes.btn} ref={btnRef}>
+              <CustomButtonV2
+                layoutClass={classes.btn}
+                overlayClass={classes.btnOverlay}
+                ref={btnRef}
+              >
                 <div
                   className={`${classes.btnText} ${classes[mouseTrack["btn"]]}`}
                 >
-                  Get in touch <img src={connectIcon} alt="" />
+                  Get in touch{" "}
+                  {mouseTrack["btn"] === "enter" ? (
+                    <img src={pointerIcon} alt="" />
+                  ) : (
+                    <img src={pointerIconAccent} alt="" />
+                  )}
                 </div>
               </CustomButtonV2>
             </CustomDragV2>

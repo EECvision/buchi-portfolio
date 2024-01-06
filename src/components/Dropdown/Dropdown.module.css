@@ -78,7 +78,7 @@
 .cross {
   width: 24px;
   height: 1px;
-  background: rgba(242, 153, 74, 1);
+  background: #f4821e;
   transition: transform 300ms;
 }
 
@@ -266,6 +266,10 @@
   background: #0e0f0f;
 }
 
+.btnOverlay {
+  background: #f4821e;
+}
+
 .btnText {
   color: #d1d1d1;
   font-family: Poppins;
@@ -280,6 +284,10 @@
   align-items: center;
   justify-content: center;
   gap: 4px;
+}
+
+.btnText.enter {
+  color: #fff;
 }
 
 .btnText img {

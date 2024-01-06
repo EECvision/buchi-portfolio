@@ -38,6 +38,7 @@
   text-transform: uppercase;
   padding: 48px 0;
   position: relative;
+  user-select: none;
 }
 
 .mainTextOverlay {

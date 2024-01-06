@@ -168,12 +168,12 @@
 }
 
 .track.active {
-  border: 2px solid rgba(242, 153, 74, 1);
+  border: 2px solid #f4821e;
   background: transparent;
 }
 
 .track.active .innerTrack {
-  background: rgba(242, 153, 74, 1);
+  background: #f4821e;
   opacity: 1;
 }
 
