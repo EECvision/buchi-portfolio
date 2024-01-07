@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import ReactDOM from "react-dom/client";
 import "./main.css";
 import {
@@ -31,7 +32,7 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <>
     <CursorContextProvider>
-      <Suspense fallback={<>Hello world</>}>
+      <Suspense fallback={<></>}>
         <RouterProvider router={router} />
       </Suspense>
     </CursorContextProvider>

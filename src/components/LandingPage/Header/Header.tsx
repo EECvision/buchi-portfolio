@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import classes from "./Header.module.css";
-import buchi from "../../../assets/landing-page/buchi-image.png";
+import buchi from "../../../assets/landing-page/buchi-image.webp";
 import { useRef, useState } from "react";
 import pointerIcon from "../../../assets/landing-page/icon-pointer.svg";
 import pointerIconAccent from "../../../assets/landing-page/icon-pointer-accent.svg";
