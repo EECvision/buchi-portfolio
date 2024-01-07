@@ -1,13 +1,13 @@
 import Creeo from "../../components/CreeoPage/Creeo";
-// import useImageLoaded from "../../hooks/useImageLoaded";
-// import Loader from "../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
+import useDelay from "../../hooks/useDelay";
 
 const CreeoPage = () => {
-  // const imageLoaded = useImageLoaded();
+  const delay = useDelay();
 
   return (
     <>
-      {/* <Loader loading={imageLoaded} /> */}
+      <Loader loading={!delay} />
       <Creeo />
     </>
   );

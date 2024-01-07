@@ -18,10 +18,20 @@ import UsabilityTest from "./UsabilityTest/UsabilityTest";
 import ProductImpact from "./ProductImpact/ProductImpact";
 import Experience from "./Experience/Experience";
 import FutureStep from "./FutureStep/FutureStep";
+import { useContext, useEffect } from "react";
+import { ScrollContext } from "../../context/LocomotiveScroll/scrollContext";
 
 const Bleuwater = () => {
+  const { locomotiveScroll } = useContext(ScrollContext);
+
+  useEffect(() => {
+    if (locomotiveScroll) {
+      locomotiveScroll.scrollTo("#bleuwater-container");
+    }
+  }, [locomotiveScroll]);
+
   return (
-    <div className={classes.container}>
+    <div id="bleuwater-container" className={classes.container}>
       <img className={classes.image} src={banner} alt="" />
       <Notification />
       <AboutProject />

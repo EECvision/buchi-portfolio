@@ -1,13 +1,13 @@
 import Commehub from "../../components/Commehub/Commehub";
-// import useImageLoaded from "../../hooks/useImageLoaded";
-// import Loader from "../../components/Loader/Loader";
+import Loader from "../../components/Loader/Loader";
+import useDelay from "../../hooks/useDelay";
 
 const CommehubPage = () => {
-  // const imageLoaded = useImageLoaded();
+  const delay = useDelay();
 
   return (
     <>
-      {/* <Loader loading={imageLoaded} /> */}
+      <Loader loading={!delay} />
       <Commehub />
     </>
   );

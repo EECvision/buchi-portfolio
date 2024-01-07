@@ -15,10 +15,20 @@ import Wireframe from "./Wireframe/Wireframe";
 import banner from "../../assets/commehub/banner.png";
 import Description from "./Description/Description";
 import HappyToWork from "../HappyToWork/HappyToWork";
+import { useContext, useEffect } from "react";
+import { ScrollContext } from "../../context/LocomotiveScroll/scrollContext";
 
 const Commehub = () => {
+  const { locomotiveScroll } = useContext(ScrollContext);
+
+  useEffect(() => {
+    if (locomotiveScroll) {
+      locomotiveScroll.scrollTo("#commehub-container");
+    }
+  }, [locomotiveScroll]);
+
   return (
-    <div className={classes.container}>
+    <div id="commehub-container" className={classes.container}>
       <img className={classes.image} src={banner} alt="" />
       <Description />
       <Overview />

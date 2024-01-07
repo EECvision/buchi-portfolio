@@ -17,10 +17,20 @@ import Evaluations from "./Evaluations/Evaluations";
 import FutureSteps from "./FutureSteps/FutureSteps";
 import Reflection from "./Reflection/Reflection";
 import HappyToWork from "../HappyToWork/HappyToWork";
+import { useContext, useEffect } from "react";
+import { ScrollContext } from "../../context/LocomotiveScroll/scrollContext";
 
 const Creeo = () => {
+  const { locomotiveScroll } = useContext(ScrollContext);
+
+  useEffect(() => {
+    if (locomotiveScroll) {
+      locomotiveScroll.scrollTo("#creeo-container");
+    }
+  }, [locomotiveScroll]);
+
   return (
-    <div className={classes.container}>
+    <div id="creeo-container" className={classes.container}>
       <img className={classes.image} src={banner} alt="" />
       <AboutProject />
       <Visualization />
