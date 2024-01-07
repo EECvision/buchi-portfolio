@@ -1,21 +1,12 @@
 import { useEffect, useState } from "react";
 import classes from "./Welcome.module.css";
 import gsap from "gsap";
-import { useLocation } from "react-router-dom";
 
 const Welcome = () => {
   const [loading, setLoading] = useState(true);
   const [loaderCounter, setCounter] = useState("1%");
 
-  const location = useLocation();
-
   useEffect(() => {
-    // location
-    if (location.pathname !== "/") {
-      setLoading(false);
-      return;
-    }
-
     // layout
     const layout = document.getElementById("layout");
     if (!layout) return;
@@ -125,9 +116,7 @@ const Welcome = () => {
           );
       }
     };
-  }, [location]);
-
-  if (location.pathname !== "/") return null;
+  }, []);
 
   return (
     <div className={`${classes.container} ${!loading && classes.inActive}`}>
