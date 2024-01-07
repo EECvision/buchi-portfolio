@@ -6,7 +6,7 @@ const useDelay = () => {
   useEffect(() => {
     setTimeout(() => {
       setDelay(false);
-    }, 2000);
+    }, 450);
   }, []);
 
   return delay;
