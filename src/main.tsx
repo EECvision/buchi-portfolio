@@ -6,16 +6,15 @@ import {
   Route,
   createRoutesFromElements,
 } from "react-router-dom";
-import { Layout } from "./components/layout";
 // import LandingPage from "./components/LandingPage/LandingPage";
 import PlaygroundPage from "./pages/playground";
 import CursorContextProvider from "./context/cursor/CursorContext";
 import CreeoPage from "./pages/projects/creeo";
 import CommehubPage from "./pages/projects/commehub";
 import BleuwaterPage from "./pages/projects/bleuwater";
-// import Home from "./pages";
 import { Suspense, lazy } from "react";
 
+const Layout = lazy(() => import("./components/layout"));
 const Home = lazy(() => import("./pages"));
 
 const router = createBrowserRouter(

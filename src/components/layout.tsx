@@ -7,11 +7,11 @@ import LocomotiveScroll from "locomotive-scroll";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import Dropdown from "./Dropdown/Dropdown";
-// import Welcome from "./Welcome/Welcome";
+import Welcome from "./Welcome/Welcome";
 import ScrollContextProvider from "../context/LocomotiveScroll/scrollContext";
 import useResizer from "../hooks/useResizer";
 
-export function Layout() {
+const Layout = () => {
   const [locomotiveScroll, setLocomotiveScroll] = useState<any>();
 
   useResizer();
@@ -28,8 +28,10 @@ export function Layout() {
       <ScrollContextProvider locomotiveScroll={locomotiveScroll}>
         <Dropdown />
         <Outlet />
-        {/* <Welcome /> */}
+        <Welcome />
       </ScrollContextProvider>
     </div>
   );
-}
+};
+
+export default Layout;
