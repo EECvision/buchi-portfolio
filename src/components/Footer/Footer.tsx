@@ -5,7 +5,7 @@ import CustomDragV2, { MousePosition } from "../CustomDragV2/CustomDragV2";
 import CustomButtonV2 from "../CustomButtonV2/CustomButtonV2";
 import { ScrollContext } from "../../context/LocomotiveScroll/scrollContext";
 
-const Footer = () => {
+const Footer = ({ isPage }: { isPage?: boolean }) => {
   const [time, setTime] = useState<string>("");
   const [cursorPosition, setCursorPosition] = useState<MousePosition>();
   const iconContainerRef = useRef<HTMLDivElement>(null);
@@ -16,8 +16,12 @@ const Footer = () => {
   const { locomotiveScroll } = useContext(ScrollContext);
 
   const handleScrollToTop = () => {
+    if (isPage) {
+      locomotiveScroll.scrollTo("#nested-page-container");
+    } else {
+      locomotiveScroll.scrollTo("#overlay");
+    }
     // document.documentElement.scrollTop = 0;
-    locomotiveScroll.scrollTo("#overlay");
   };
 
   useEffect(() => {
@@ -52,7 +56,10 @@ const Footer = () => {
           onClick={handleScrollToTop}
           bouce
         >
-          <div ref={iconContainerRef} className={classes.iconContainer}>
+          <div
+            ref={iconContainerRef}
+            className={`${classes.iconContainer} ${isPage && classes.isPage}`}
+          >
             <img ref={iconRef} src={chevron} alt="" />
           </div>
         </CustomDragV2>

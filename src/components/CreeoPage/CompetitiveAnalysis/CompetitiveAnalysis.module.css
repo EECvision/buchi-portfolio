@@ -129,6 +129,11 @@
   letter-spacing: 1px;
 }
 
+.site img {
+  width: 19px;
+  height: 19px;
+}
+
 @media screen and (max-width: 1440px) {
   .stages {
     padding: 0 32px;
