@@ -8,6 +8,7 @@ import classes from "./LandingPage.module.css";
 import Navbar from "./Navbar/Navbar";
 import Testimonial from "./Testimonial/Testimonial";
 import { Work } from "./Work/Work";
+// import overlayImage from "../../assets/overlay.svg";
 
 const LandingPage = () => {
   return (
@@ -15,6 +16,7 @@ const LandingPage = () => {
       {/* <div id="overlay-all" className={classes.overlayAll}></div> */}
       <CustomCursor />
       <div className={classes.grayArea}>
+        {/* <img className={classes.overlayImage} src={overlayImage} alt="" /> */}
         <div
           id="nav-wrapper"
           className={`${classes.navWrapper} header-container`}

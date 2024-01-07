@@ -13,7 +13,10 @@ import CursorContextProvider from "./context/cursor/CursorContext";
 import CreeoPage from "./pages/projects/creeo";
 import CommehubPage from "./pages/projects/commehub";
 import BleuwaterPage from "./pages/projects/bleuwater";
-import Home from "./pages";
+// import Home from "./pages";
+import { Suspense, lazy } from "react";
+
+const Home = lazy(() => import("./pages"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,7 +34,9 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <>
     <CursorContextProvider>
-      <RouterProvider router={router} />
+      <Suspense fallback={<>Hello world</>}>
+        <RouterProvider router={router} />
+      </Suspense>
     </CursorContextProvider>
   </>
 );
