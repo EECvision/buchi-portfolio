@@ -1,13 +1,13 @@
 import Bleuwater from "../../components/Bleuwater/Bleuwater";
-import Loader from "../../components/Loader/Loader";
-import useImageLoaded from "../../hooks/useImageLoaded";
+// import Loader from "../../components/Loader/Loader";
+// import useImageLoaded from "../../hooks/useImageLoaded";
 
 const BleuwaterPage = () => {
-  const imageLoaded = useImageLoaded();
+  // const imageLoaded = useImageLoaded();
 
   return (
     <>
-      <Loader loading={imageLoaded} />
+      {/* <Loader loading={imageLoaded} /> */}
       <Bleuwater />
     </>
   );
