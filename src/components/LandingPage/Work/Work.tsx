@@ -101,25 +101,14 @@ export const Work = () => {
       }
     );
 
-    gsap
-      .timeline()
-      .to(".work-label", {
-        scrollTrigger: {
-          trigger: "#scroll-window",
-          start: "top 3.7%",
-          end: "bottom bottom",
-          pin: ".work-label",
-        },
-      })
-      .to(".work-label", {
-        yPercent: "-100",
-        scrollTrigger: {
-          trigger: "#scroll-window",
-          start: "top top",
-          end: "bottom bottom",
-          scrub: true,
-        },
-      });
+    gsap.timeline().to(".work-label", {
+      scrollTrigger: {
+        trigger: "#scroll-window",
+        start: "top 3.7%",
+        end: "bottom bottom",
+        pin: ".work-label",
+      },
+    });
   }, []);
 
   return (
