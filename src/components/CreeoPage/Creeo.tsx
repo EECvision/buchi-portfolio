@@ -17,6 +17,7 @@ import Evaluations from "./Evaluations/Evaluations";
 import FutureSteps from "./FutureSteps/FutureSteps";
 import Reflection from "./Reflection/Reflection";
 import HappyToWork from "../HappyToWork/HappyToWork";
+import NextProject from "../NextProject/NextProject";
 
 const Creeo = () => {
   return (
@@ -38,8 +39,8 @@ const Creeo = () => {
       <Evaluations />
       <FutureSteps />
       <Reflection />
+      <NextProject />
       <HappyToWork />
-      
     </div>
   );
 };

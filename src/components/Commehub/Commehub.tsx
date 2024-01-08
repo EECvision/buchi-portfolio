@@ -15,6 +15,7 @@ import Wireframe from "./Wireframe/Wireframe";
 import banner from "../../assets/commehub/banner.png";
 import Description from "./Description/Description";
 import HappyToWork from "../HappyToWork/HappyToWork";
+import NextProject from "../NextProject/NextProject";
 
 const Commehub = () => {
   return (
@@ -34,6 +35,7 @@ const Commehub = () => {
       <OtherScreens />
       <TestPhase />
       <Prototype />
+      <NextProject />
       <HappyToWork />
     </div>
   );

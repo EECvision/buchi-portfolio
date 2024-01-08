@@ -18,6 +18,7 @@ import UsabilityTest from "./UsabilityTest/UsabilityTest";
 import ProductImpact from "./ProductImpact/ProductImpact";
 import Experience from "./Experience/Experience";
 import FutureStep from "./FutureStep/FutureStep";
+import NextProject from "../NextProject/NextProject";
 
 const Bleuwater = () => {
   return (
@@ -40,6 +41,7 @@ const Bleuwater = () => {
       <ProductImpact />
       <Experience />
       <FutureStep />
+      <NextProject />
       <HappyToWork />
     </div>
   );
