@@ -1,6 +1,5 @@
 import classes from "./Reflection.module.css";
 import creeoLogo from "../../../assets/creeo-logo.png";
-import NextProject from "../../../assets/next-project.png";
 
 const Reflection = () => {
   return (
@@ -19,9 +18,6 @@ const Reflection = () => {
         </div>
         <div className={classes.logoContainer}>
           <img className={classes.logo} alt="" src={creeoLogo} />
-          <div className={classes.title}>Thank you for reading</div>
-          <img className={classes.nextProject} src={NextProject} alt="" />
-          <div className={classes.next}>Next</div>
         </div>
       </div>
     </div>

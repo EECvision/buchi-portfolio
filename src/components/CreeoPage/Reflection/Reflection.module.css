@@ -56,16 +56,6 @@
   letter-spacing: 1px;
 }
 
-.next {
-  color: #fff;
-  font-family: Krona One;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 46px;
-  /* 191.667% */
-}
-
 .text {
   width: 100%;
   color: #7d8387;
@@ -100,12 +90,6 @@
 .logo {
   width: 100%;
   max-width: 557px;
-  height: auto;
-}
-
-.nextProject {
-  width: 100%;
-  max-width: 1012px;
   height: auto;
 }
 
