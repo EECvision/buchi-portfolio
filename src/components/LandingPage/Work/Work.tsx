@@ -115,6 +115,7 @@ export const Work = () => {
     <>
       <div id="Work" className={`${classes.container} work`}>
         <div className={classes.wrapper}>
+          <div className={classes.mobileLabel}>Featured Works</div>
           <div className={`${classes.scrollWrapper} work-scroll`}>
             <div className={`${classes.label} work-label`}>Featured Works</div>
             <div className={`${classes.projects} work-projects`}>

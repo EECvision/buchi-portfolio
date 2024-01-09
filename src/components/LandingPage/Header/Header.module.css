@@ -26,10 +26,6 @@
   position: absolute;
 }
 
-.imagePlaceholder {
-  /* transform: translateX(-40px); */
-}
-
 .imagePlaceholder,
 .imageContainer {
   top: 48px;
@@ -100,6 +96,10 @@
 
 .connectIcon {
   transition: transform 650ms;
+}
+
+.mobileIcon {
+  display: none;
 }
 
 .connectIcon img {
@@ -332,7 +332,15 @@
   .btn {
     width: 105px;
     height: 105px;
-    /* background: #f4821e; */
+    background: #f4821e;
+  }
+
+  .connectIcon img {
+    display: none;
+  }
+
+  .mobileIcon {
+    display: inline-block !important;
   }
 
   .btnContent {
@@ -355,5 +363,15 @@
 
   .mainText img {
     width: 72px;
+  }
+
+  .connectContainer {
+    transform: translate(-12px, 0) !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .connectContainer {
+    transform: translate(-24px, 24px) !important;
   }
 }

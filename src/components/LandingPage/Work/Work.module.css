@@ -37,6 +37,21 @@
   text-align: end;
 }
 
+.mobileLabel {
+  display: none;
+  color: #d1d1d1;
+  font-family: Monument Extended;
+  font-size: 11.542px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.007px; /* 216.667% */
+  letter-spacing: 0.173px;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-left: 13px;
+  padding-bottom: 12px;
+}
+
 .projects {
   width: 100%;
   position: relative;
@@ -126,5 +141,9 @@
 
   .wrapper {
     padding: 0;
+  }
+
+  .mobileLabel {
+    display: block;
   }
 }

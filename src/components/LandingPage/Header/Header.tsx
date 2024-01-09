@@ -79,6 +79,7 @@ const Header = () => {
                   ) : (
                     <img src={pointerIconAccent} />
                   )}
+                  <img className={classes.mobileIcon} src={pointerIcon} />
                 </div>
               </div>
             </CustomButtonV2>
