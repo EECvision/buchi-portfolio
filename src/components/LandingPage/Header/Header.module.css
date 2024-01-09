@@ -28,10 +28,8 @@
 
 .imagePlaceholder,
 .imageContainer {
-  top: 48px;
   top: 0;
   transform: translateX(-32px);
-  /* top: 0; */
 }
 
 .imagePlaceholder {
@@ -45,10 +43,6 @@
   user-select: none;
   pointer-events: none;
   transition: all 100ms linear;
-}
-
-.desktop {
-  /* display: none; */
 }
 
 .mobile {
@@ -221,10 +215,6 @@
 }
 
 @media screen and (max-width: calc(1440px + 24px)) {
-  .text {
-    /* padding: 0 24px; */
-  }
-
   .elipse {
     transform: translateY(-55%);
     position: absolute;
@@ -279,6 +269,10 @@
     width: 100%;
     max-width: 436px;
     position: static;
+  }
+
+  .imageContainer {
+    transform: translateX(0);
   }
 
   .imagePlaceholder {
@@ -364,14 +358,11 @@
   .mainText img {
     width: 72px;
   }
-
-  .connectContainer {
-    transform: translate(-12px, 0) !important;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .connectContainer {
-    transform: translate(-24px, 24px) !important;
+  .imagePlaceholder {
+    bottom: 240px;
+    padding-right: 24px;
   }
 }
