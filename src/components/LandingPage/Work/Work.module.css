@@ -32,7 +32,9 @@
   transform: rotate(-90deg) translateX(-42%);
   white-space: nowrap;
   position: absolute;
-  left: -100px;
+  left: -120px;
+  width: 189px;
+  text-align: end;
 }
 
 .projects {

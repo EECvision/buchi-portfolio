@@ -17,14 +17,16 @@ const VisualDesign = () => {
       <div className={classes.description}>
         Hi-fidelity 27 essential screens from the app are represented below
       </div>
-      <img src={visualDesignImage1} alt="" />
-      <img src={visualDesignImage2} alt="" />
-      <img src={visualDesignImage3} alt="" />
-      <img src={visualDesignImage4} alt="" />
-      <img src={visualDesignImage5} alt="" />
-      <img src={visualDesignImage6} alt="" />
-      <img src={visualDesignImage7} alt="" />
-      <img src={visualDesignImage8} alt="" />
+      <div className={classes.imageContainer}>
+        <img src={visualDesignImage1} alt="" />
+        <img src={visualDesignImage2} alt="" />
+        <img src={visualDesignImage3} alt="" />
+        <img src={visualDesignImage4} alt="" />
+        <img src={visualDesignImage5} alt="" />
+        <img src={visualDesignImage6} alt="" />
+        <img src={visualDesignImage7} alt="" />
+        <img src={visualDesignImage8} alt="" />
+      </div>
     </div>
   );
 };
