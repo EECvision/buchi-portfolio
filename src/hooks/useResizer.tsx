@@ -22,7 +22,7 @@ const useResizer = () => {
         }
       }
 
-      if (window.matchMedia(`(max-width: ${800}px)`).matches) {
+      if (window.matchMedia(`(max-width: ${1200}px)`).matches) {
         if (window.matchMedia(`(max-width: ${768}px)`).matches) return;
         const reloadState = Number(window.localStorage.getItem("reload-state"));
         if (reloadState !== 2) {
