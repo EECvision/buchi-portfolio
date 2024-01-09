@@ -106,12 +106,12 @@ const Welcome = () => {
           // )
           .from(
             [".header-left"],
-            { y: 40, opacity: 0, delay: 0.6, duration: 0.45 },
+            { y: 40, opacity: 0, delay: 0.4, duration: 0.45 },
             "0"
           )
           .from(
             [".header-right"],
-            { y: 40, opacity: 0, delay: 0.6, duration: 0.45 },
+            { y: 40, opacity: 0, delay: 0.4, duration: 0.45 },
             "0"
           );
       }

@@ -1,5 +1,5 @@
 .container {
-  height: calc(620px);
+  height: calc(678px - 68px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,17 +21,21 @@
 .imageContainer,
 .imagePlaceholder,
 .image {
-  width: 486.896px;
+  width: 398.4px;
+  height: 558.495px;
   position: absolute;
 }
 
 .imagePlaceholder {
-  transform: translateX(-40px);
+  /* transform: translateX(-40px); */
 }
 
 .imagePlaceholder,
 .imageContainer {
-  top: -24px;
+  top: 48px;
+  top: 0;
+  transform: translateX(-32px);
+  /* top: 0; */
 }
 
 .imagePlaceholder {
@@ -40,6 +44,8 @@
 
 .image {
   height: auto;
+  height: 100%;
+  object-fit: cover;
   user-select: none;
   pointer-events: none;
   transition: all 100ms linear;
@@ -58,7 +64,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translate(50%, 90%);
+  transform: translate(50%, 70%);
   position: absolute;
   right: 0;
 }
@@ -147,6 +153,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
+  line-height: 120.185px;
 }
 
 .mainText img {
@@ -185,11 +192,13 @@
   line-height: 22.748px; /* 156.237% */
   letter-spacing: 0.51px;
   text-transform: uppercase;
-  margin-bottom: 4px;
 }
 
 .right {
   text-align: right;
+  font-size: 14px;
+  line-height: 26.93px; /* 192.359% */
+  letter-spacing: 0.49px;
 }
 
 .iconContainer {
@@ -241,12 +250,14 @@
 
   .imageContainer,
   .image {
+    height: auto;
     width: 100%;
     max-width: 436px;
     position: static;
   }
 
   .imagePlaceholder {
+    height: auto;
     width: 100%;
     max-width: 436px;
     bottom: 280px;
