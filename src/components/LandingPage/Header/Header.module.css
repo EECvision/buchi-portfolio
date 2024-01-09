@@ -272,7 +272,7 @@
   }
 
   .imageContainer {
-    transform: translateX(0);
+    transform: translateX(-16px) !important;
   }
 
   .imagePlaceholder {
