@@ -153,7 +153,6 @@
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
-  line-height: 120.185px;
 }
 
 .mainText img {
@@ -178,6 +177,14 @@
   overflow: hidden;
   position: relative;
   z-index: 25;
+}
+
+.animationContainer:first-child {
+  margin-bottom: -16px;
+}
+
+.animationContainer:last-child {
+  margin-top: -16px;
 }
 
 .text {
@@ -224,6 +231,16 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .animationContainer:first-child {
+    margin-bottom: -8px;
+  }
+
+  .animationContainer:last-child {
+    margin-top: -8px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container {
     height: auto;
@@ -237,6 +254,14 @@
     height: 400px;
     transform: translateY(-150%);
     position: absolute;
+  }
+
+  .animationContainer:first-child {
+    margin-bottom: -0;
+  }
+
+  .animationContainer:last-child {
+    margin-top: -0;
   }
 
   .right {
