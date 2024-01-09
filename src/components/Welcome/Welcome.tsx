@@ -1,12 +1,39 @@
 import { useEffect, useState } from "react";
 import classes from "./Welcome.module.css";
 import gsap from "gsap";
+// import fonts from "../../fonts"
 
 const Welcome = () => {
   const [loading, setLoading] = useState(true);
   const [loaderCounter, setCounter] = useState("1%");
 
+  // Define your font
+  const font = new FontFace(
+    "Monument Extended",
+    "url(../../fonts/monumentextended-ultrabold-webfont.woff2)",
+    {
+      weight: "bold",
+    }
+  );
+
   useEffect(() => {
+    // Load the font
+    console.log("font loading");
+
+    font
+      .load()
+      .then((loadedFont) => {
+        // Font is loaded, you can now use it
+        // document.fonts.add(loadedFont);
+        console.log("Font loaded:", loadedFont);
+
+        // Your code to render the page or perform additional actions
+        // ...
+      })
+      .catch((error) => {
+        console.error("Font failed to load:", error);
+      });
+
     // layout
     const layout = document.getElementById("layout");
     if (!layout) return;
@@ -51,7 +78,7 @@ const Welcome = () => {
         },
       });
 
-    let counter = 0;
+    let counter = 1;
     const increment = () => {
       if (counter <= 100) {
         setCounter(counter + "%");
