@@ -1,29 +1,51 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useRef } from "react";
-import useWindowWidth from "./useWindowWidth";
+import { useEffect } from "react";
+// import useWindowWidth from "./useWindowWidth";
 
 const useResizer = () => {
-  const resizeTimer = useRef<any>(0);
-  const { width } = useWindowWidth();
+  // const resizeTimer = useRef<any>(0);
+  // const { width } = useWindowWidth();
 
   useEffect(() => {
-    function handleResizeEnd() {
-      if (width > 720 && width < 768) {
-        // window.location.reload();
+    // function handleResizeEnd() {
+    //   if (width > 720 && width < 768) {
+    //     // window.location.reload();
+    //   }
+    // }
+
+    const checkBreakpoint = () => {
+      if (window.matchMedia(`(max-width: ${768}px)`).matches) {
+        const reloadState = Number(window.localStorage.getItem("reload-state"));
+        if (reloadState !== 1) {
+          location.reload();
+          window.localStorage.setItem("reload-state", "1");
+        }
       }
-    }
 
-    function debounce(callback: () => void, delay: number) {
-      return function () {
-        clearTimeout(resizeTimer.current);
-        resizeTimer.current = setTimeout(callback, delay);
-      };
-    }
+      if (window.matchMedia(`(max-width: ${800}px)`).matches) {
+        if (window.matchMedia(`(max-width: ${768}px)`).matches) return;
+        const reloadState = Number(window.localStorage.getItem("reload-state"));
+        if (reloadState !== 2) {
+          location.reload();
+          window.localStorage.setItem("reload-state", "2");
+        }
+      }
+    };
 
-    window.addEventListener("resize", debounce(handleResizeEnd, 0));
+    // Initial check
+    checkBreakpoint();
+
+    // function debounce(callback: () => void, delay: number) {
+    //   return function () {
+    //     clearTimeout(resizeTimer.current);
+    //     resizeTimer.current = setTimeout(callback, delay);
+    //   };
+    // }
+
+    window.addEventListener("resize", checkBreakpoint);
 
     return () => {
-      window.removeEventListener("resize", debounce(handleResizeEnd, 0));
+      window.removeEventListener("resize", checkBreakpoint);
     };
   });
 };
