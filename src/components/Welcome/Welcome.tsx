@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import classes from "./Welcome.module.css";
 import gsap from "gsap";
+import emoji from "../../assets/landing-page/emoji.png";
 // import fonts from "../../fonts"
 
 const Welcome = () => {
@@ -14,7 +15,6 @@ const Welcome = () => {
 
     await document.fonts.ready;
     setIsFontsLoaded(true);
-
     // layout
     const layout = document.getElementById("layout");
     if (!layout) return;
@@ -22,32 +22,16 @@ const Welcome = () => {
     layout.style.height = "100vh";
     layout.style.overflow = "hidden";
 
+    gsap.set("#welcome-emoji", { yPercent: "100" });
     // text
-    gsap.set(["#welcome-title", "#welcome-description"], { opacity: 0 });
-
     gsap
       .timeline()
-      .to(["#welcome-title", "#welcome-description"], { opacity: 1 })
-      .from(
-        "#welcome-title",
-        {
-          y: 80,
-          duration: 0.65,
-          delay: 0.3,
-          ease: "power4.out",
-        },
-        "0"
-      )
-      .from(
-        "#welcome-description",
-        {
-          y: -80,
-          duration: 0.65,
-          delay: 0.3,
-          ease: "power4.out",
-        },
-        "0"
-      )
+      .to("#welcome-emoji", {
+        delay: 0.3,
+        duration: 0.6,
+        ease: "back",
+        yPercent: "0",
+      })
       .from("#welcome-counter", {
         opacity: 0,
         scale: 0.9,
@@ -136,25 +120,15 @@ const Welcome = () => {
         !isFontsLoaded && classes.clearScreen
       }`}
     >
-      <div className={classes.textContainer}>
-        <div className={classes.animationContainer}>
-          <div id="welcome-title" className={classes.title}>
-            Hello! 👋🏼
+      <div className={classes.loadingContainer}>
+        <div id="welcome-counter">
+          <div className={classes.counter}>{loaderCounter}</div>
+          <div className={classes.description}>
+            Loading really cool stuff, you will <br /> love it, Promise!
           </div>
         </div>
-        <div className={classes.animationContainer}>
-          <div id="welcome-description" className={classes.description}>
-            I'm currently on the market for new design roles, and <br /> you
-            found me first {":)"}
-          </div>
-        </div>
-      </div>
 
-      <div id="welcome-counter" className={classes.loadingContainer}>
-        <div className={classes.counter}>{loaderCounter}</div>
-        <div className={classes.description}>
-          Loading really cool stuff, you will <br /> love it, Promise!
-        </div>
+        <img id="welcome-emoji" className={classes.emoji} src={emoji} alt="" />
       </div>
     </div>
   );

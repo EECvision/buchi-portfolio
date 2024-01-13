@@ -41,50 +41,49 @@
 }
 
 .loadingContainer {
+  height: 100vh;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
   position: absolute;
-  bottom: 61px;
+  top: 0;
   right: 94px;
-  padding: 0 16px;
-  opacity: 0.3;
+  padding-top: 61px;
 }
 
 .animationContainer {
   overflow: hidden;
 }
 
-.title {
-  color: #fff;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px; /* 116.667% */
-  letter-spacing: 0.24px;
-  margin-bottom: 13px;
-}
-
 .description {
-  color: #838995;
-  text-align: center;
+  color: #707479;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; /* 137.5% */
-  letter-spacing: 0.16px;
+  line-height: 28px; /* 200% */
+  letter-spacing: 0.14px;
 }
 
 .counter {
   color: #d9d9d9;
   font-family: Monument Extended;
-  font-size: 72px;
+  font-size: 96px;
   font-style: normal;
   font-weight: 800;
-  line-height: 76px; /* 105.556% */
+  line-height: 76px; /* 79.167% */
   letter-spacing: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 27px;
   animation: countTo100 50s linear forwards;
+}
+
+.emoji {
+  width: 218px;
+  height: auto;
 }
 
 .loadingContainer .description {
@@ -103,7 +102,6 @@
 
   .loadingContainer {
     right: unset;
-    bottom: 16px;
   }
 
   .counter,
