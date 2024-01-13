@@ -3,7 +3,7 @@ import { cursorActionTypes } from "./cursorActions";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export type InitialStateType = {
   size: "small" | "large";
-  component: "email" | null;
+  component: "email" | "project" | null;
   dispatch: React.Dispatch<React.SetStateAction<any>>;
 };
 

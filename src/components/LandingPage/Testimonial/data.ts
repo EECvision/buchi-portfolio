@@ -6,15 +6,15 @@ export const data = [
       "Buchi  is extremely creative and his ability to consistently produce better work has always impressed me.",
   },
   {
-    name: "2Micheal Adewale",
-    project: "Genadrop",
+    name: "Emmanuel. Ezeka",
+    project: "Bleuwater",
     review:
-      "Buchi  is extremely creative and his ability to consistently produce better work has always impressed me.",
+      "Buchi is a great designer. He is one of the kindest people I have worked with. On top of that, he is highly skilled and creative.",
   },
   {
-    name: "3Micheal Adewale",
-    project: "Genadrop",
+    name: "Mohamed ElKhamisy",
+    project: "Minority Programmers",
     review:
-      "Buchi  is extremely creative and his ability to consistently produce better work has always impressed me.",
+      "I worked with Buchi for the past year, he is an excellent UI/UX Designer. I highly recommend him to any company.",
   },
 ];

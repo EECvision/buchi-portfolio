@@ -36,7 +36,7 @@ const Contact = () => {
           Happy to work with you, send a message
         </div>
         <div className={`${classes.mainText} contact-mainText`}>
-          Hello@Buchi.com
+          Hello@Buchi.pro
           <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -60,7 +60,7 @@ const Contact = () => {
                 ) : (
                   <img src={emailIconAccent} alt="" />
                 )}
-                <span>Hello@Buchi.com</span>
+                <span>Hello@Buchi.pro</span>
               </div>
             </CustomButtonV2>
           </CustomDragV2>

@@ -10,6 +10,9 @@
   position: relative;
 }
 
+.imageContainer:hover {
+}
+
 .imageOverlay {
   position: absolute;
   top: 0;

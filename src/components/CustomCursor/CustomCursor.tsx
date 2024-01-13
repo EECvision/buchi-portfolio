@@ -55,7 +55,7 @@ const CustomCursor = () => {
       (event: any) => {
         if (event.target && event.target.closest(`.contact-mainText`)) {
           event.stopPropagation();
-          navigator.clipboard.writeText("Hello@buchi.com");
+          navigator.clipboard.writeText("Hello@Buchi.pro");
           setCopy(true);
           setTimeout(() => {
             setCopy(false);
@@ -119,7 +119,7 @@ const CustomCursor = () => {
 
         {component === "email" && (
           <div className={`${classes.email} ${classes[size]}`}>
-            <div className={classes.emailText}>
+            <div className={classes.text}>
               {copy ? (
                 <>Copied</>
               ) : (
@@ -127,6 +127,14 @@ const CustomCursor = () => {
                   Click to <br /> copy
                 </>
               )}
+            </div>
+          </div>
+        )}
+
+        {component === "project" && (
+          <div className={`${classes.project} ${classes[size]}`}>
+            <div className={classes.text}>
+              Click to <br /> view
             </div>
           </div>
         )}

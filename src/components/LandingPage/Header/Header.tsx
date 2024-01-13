@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import classes from "./Header.module.css";
-import buchi from "../../../assets/landing-page/buchi-image.webp";
+import buchi from "../../../assets/landing-page/buchi-image3.webp";
 import { useRef, useState } from "react";
 import pointerIcon from "../../../assets/landing-page/icon-pointer.svg";
 import pointerIconAccent from "../../../assets/landing-page/icon-pointer-accent.svg";
@@ -17,6 +17,12 @@ const Header = () => {
   const [mouseDir, setMouseDir] = useState<MouseDirection>();
   const [mouseTrack, setMouseTrack] = useState<MouseTrack>();
   useMediaWidth();
+
+  const handleMail = () => {
+    const mailtoURL = "mailto:Hello@Buchi.pro";
+    // Open the default email client
+    window.location.href = mailtoURL;
+  };
 
   const content = (id: string) => (
     <>
@@ -57,6 +63,7 @@ const Header = () => {
             onMouseTrack={setMouseTrack}
             bouce
             customRef={btnRef}
+            onClick={handleMail}
           >
             <CustomButtonV2
               layoutClass={classes.btn}
