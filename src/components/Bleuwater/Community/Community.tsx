@@ -1,6 +1,6 @@
 import classes from "./Community.module.css";
-import communityImage1 from "../../../assets/bleuwater/community-1.png";
-import communityImage2 from "../../../assets/bleuwater/community-2.png";
+import communityImage1 from "../../../assets/bleuwater/community-1.webp";
+import communityImage2 from "../../../assets/bleuwater/community-2.webp";
 
 const Community = () => {
   return (

@@ -1,7 +1,7 @@
 import classes from "./Goal.module.css";
-import goalImage1 from "../../../assets/commehub/goal-1.png";
-import goalImage2 from "../../../assets/commehub/goal-2.png";
-import goalLabel from "../../../assets/commehub/goal-label.png";
+import goalImage1 from "../../../assets/commehub/goal-1.webp";
+import goalImage2 from "../../../assets/commehub/goal-2.webp";
+import goalLabel from "../../../assets/commehub/goal-label.webp";
 
 const starIcon = (
   <svg

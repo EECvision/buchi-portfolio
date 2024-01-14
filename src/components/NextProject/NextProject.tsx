@@ -1,5 +1,5 @@
 import classes from "./NextProject.module.css";
-import nextProjectImage from "../../assets/next-project.png";
+import nextProjectImage from "../../assets/next-project.webp";
 
 const NextProject = () => {
   return (

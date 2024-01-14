@@ -1,6 +1,6 @@
 import classes from "./DesignHighlights.module.css";
-import designHighlightLabel from "../../../assets/bleuwater/design-highlight-label.png";
-import designHighlight from "../../../assets/bleuwater/design-highlight.png";
+import designHighlightLabel from "../../../assets/bleuwater/design-highlight-label.webp";
+import designHighlight from "../../../assets/bleuwater/design-highlight.webp";
 
 const DesignHighlights = () => {
   return (

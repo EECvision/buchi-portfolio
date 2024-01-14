@@ -1,8 +1,8 @@
 import classes from "./Sketches.module.css";
 import sketchImage from "../../../assets/sketches.png";
-import sketch1 from "../../../assets/sketch1.png";
-import sketch2 from "../../../assets/sketch2.png";
-import sketch3 from "../../../assets/sketch3.png";
+import sketch1 from "../../../assets/sketch1.webp";
+import sketch2 from "../../../assets/sketch2.webp";
+import sketch3 from "../../../assets/sketch3.webp";
 
 const Sketches = () => {
   return (

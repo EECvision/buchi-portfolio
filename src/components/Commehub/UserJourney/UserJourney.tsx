@@ -1,6 +1,6 @@
 import classes from "./UserJourney.module.css";
-import journeyImage from "../../../assets/commehub/journey.png";
-import journeyLabel from "../../../assets/commehub/journey-label.png";
+import journeyImage from "../../../assets/commehub/journey.webp";
+import journeyLabel from "../../../assets/commehub/journey-label.webp";
 
 const UserJourney = () => {
   return (

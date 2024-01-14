@@ -1,5 +1,5 @@
 import classes from "./TheGoal.module.css";
-import theGoalLabel from "../../../assets/bleuwater/the-goal-label.png";
+import theGoalLabel from "../../../assets/bleuwater/the-goal-label.webp";
 
 const TheGaol = () => {
   return (

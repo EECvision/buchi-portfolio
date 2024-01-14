@@ -1,5 +1,5 @@
 import classes from "./Wireframe.module.css";
-import wireframeImage1 from "../../../assets/commehub/wireframe-1.png";
+import wireframeImage1 from "../../../assets/commehub/wireframe-1.webp";
 import wireframeImage2 from "../../../assets/commehub/wireframe-2.png";
 import wireframeLabel from "../../../assets/commehub/wireframe-label.png";
 

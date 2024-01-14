@@ -12,7 +12,7 @@ import UserFlow from "./UserFlow/UserFlow";
 import UserJourney from "./UserJourney/UserJourney";
 import VisualDesign from "./VisualDesign/VisualDesign";
 import Wireframe from "./Wireframe/Wireframe";
-import banner from "../../assets/commehub/banner.png";
+import banner from "../../assets/commehub/banner.webp";
 import Description from "./Description/Description";
 import HappyToWork from "../HappyToWork/HappyToWork";
 import NextProject from "../NextProject/NextProject";

@@ -1,5 +1,5 @@
 import classes from "./ProductImpact.module.css";
-import productImpactLabel from "../../../assets/bleuwater/product-impact-label.png";
+import productImpactLabel from "../../../assets/bleuwater/product-impact-label.webp";
 import checkMark from "../../../assets/bleuwater/check-mark.svg";
 
 const ProductImpact = () => {

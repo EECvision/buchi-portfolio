@@ -1,6 +1,6 @@
 import classes from "./OtherScreens.module.css";
-import otherscreensImage from "../../../assets/commehub/other.png";
-import otherscreenLabel from "../../../assets/commehub/otherscreen-label.png";
+import otherscreensImage from "../../../assets/commehub/other.webp";
+import otherscreenLabel from "../../../assets/commehub/otherscreen-label.webp";
 
 const OtherScreens = () => {
   return (

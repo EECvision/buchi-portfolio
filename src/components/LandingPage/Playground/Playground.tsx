@@ -1,5 +1,5 @@
 import classes from "./Playground.module.css";
-import playgroundImg from "../../../assets/landing-page/playground.png";
+import playgroundImg from "../../../assets/landing-page/playground.webp";
 
 const Playground = () => {
   return (

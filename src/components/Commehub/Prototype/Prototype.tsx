@@ -1,6 +1,6 @@
 import classes from "./Prototype.module.css";
-import prototypeImage from "../../../assets/commehub/prototype.png";
-import prototypeLabel from "../../../assets/commehub/prototype-label.png";
+import prototypeImage from "../../../assets/commehub/prototype.webp";
+import prototypeLabel from "../../../assets/commehub/prototype-label.webp";
 
 const Prototype = () => {
   return (

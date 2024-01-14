@@ -1,5 +1,5 @@
 import classes from "./Bleuwater.module.css";
-import banner from "../../assets/bleuwater/banner.png";
+import banner from "../../assets/bleuwater/banner.webp";
 import HappyToWork from "../HappyToWork/HappyToWork";
 import AboutProject from "./AboutProject/AboutProject";
 import Notification from "./Notification/Notification";

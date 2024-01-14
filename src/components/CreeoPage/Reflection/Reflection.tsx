@@ -1,5 +1,5 @@
 import classes from "./Reflection.module.css";
-import creeoLogo from "../../../assets/creeo-logo.png";
+import creeoLogo from "../../../assets/creeo-logo.webp";
 
 const Reflection = () => {
   return (

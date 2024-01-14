@@ -1,10 +1,10 @@
 import classes from "./Brandina.module.css";
-import brandImage1 from "../../../assets/commehub/brandina-1.png";
-import brandImage2 from "../../../assets/commehub/brandina-2.png";
+import brandImage1 from "../../../assets/commehub/brandina-1.webp";
+import brandImage2 from "../../../assets/commehub/brandina-2.webp";
 import brandImage3 from "../../../assets/commehub/brandina-3.png";
-import iconImage from "../../../assets/commehub/icons.png";
-import typographyImage from "../../../assets/commehub/typography.png";
-import brandinaLabel from "../../../assets/commehub/brandina-label.png";
+import iconImage from "../../../assets/commehub/icons.webp";
+import typographyImage from "../../../assets/commehub/typography.webp";
+import brandinaLabel from "../../../assets/commehub/brandina-label.webp";
 
 const Brandina = () => {
   return (

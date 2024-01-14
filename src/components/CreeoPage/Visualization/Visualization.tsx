@@ -1,10 +1,10 @@
 import classes from "./Visualization.module.css";
 import VisualizationImage from "../../../assets/visualization.png";
-import creeoVisual from "../../../assets/creeo-visual.png";
-import processMap from "../../../assets/process-map.png";
-import process from "../../../assets/process.png";
-import ideas from "../../../assets/ideas.png";
-import stickyNotes from "../../../assets/notes.png";
+import creeoVisual from "../../../assets/creeo-visual.webp";
+import processMap from "../../../assets/process-map.webp";
+import process from "../../../assets/process.webp";
+import ideas from "../../../assets/ideas.webp";
+import stickyNotes from "../../../assets/notes.webp";
 
 const Visualization = () => {
   return (

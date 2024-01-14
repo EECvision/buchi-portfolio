@@ -1,5 +1,5 @@
 import classes from "./Splits.module.css";
-import splitImage from "../../../assets/bleuwater/splits.png";
+import splitImage from "../../../assets/bleuwater/splits.webp";
 
 const Splits = () => {
   return (

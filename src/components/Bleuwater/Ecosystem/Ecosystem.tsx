@@ -1,5 +1,5 @@
 import classes from "./Ecosystem.module.css";
-import ecosystemImage from "../../../assets/bleuwater/ecosystem.png";
+import ecosystemImage from "../../../assets/bleuwater/ecosystem.webp";
 
 const Ecosystem = () => {
   return (

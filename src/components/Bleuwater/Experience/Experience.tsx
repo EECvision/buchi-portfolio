@@ -1,5 +1,5 @@
 import classes from "./Experience.module.css";
-import experienceLabel from "../../../assets/bleuwater/experience-label.png";
+import experienceLabel from "../../../assets/bleuwater/experience-label.webp";
 
 const Experience = () => {
   return (

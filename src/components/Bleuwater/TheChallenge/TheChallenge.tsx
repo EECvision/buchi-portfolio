@@ -1,5 +1,5 @@
 import classes from "./TheChallenge.module.css";
-import theChallengeLabel from "../../../assets/bleuwater/the-challenge-label.png";
+import theChallengeLabel from "../../../assets/bleuwater/the-challenge-label.webp";
 
 const TheChallenge = () => {
   return (

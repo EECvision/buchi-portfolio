@@ -1,6 +1,6 @@
 import classes from "./Evaluations.module.css";
 import before from "../../../assets/before.png";
-import after from "../../../assets/after.png";
+import after from "../../../assets/after.webp";
 
 const Evaluations = () => {
   return (

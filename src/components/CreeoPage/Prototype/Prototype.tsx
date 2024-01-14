@@ -1,6 +1,6 @@
 import classes from "./Prototype.module.css";
-import prototypeImage from "../../../assets/prototype.png";
-import prototype1 from "../../../assets/prototype-1.png";
+import prototypeImage from "../../../assets/prototype.webp";
+import prototype1 from "../../../assets/prototype-1.webp";
 
 const Prototype = () => {
   return (

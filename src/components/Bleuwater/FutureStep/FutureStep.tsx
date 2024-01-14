@@ -1,5 +1,5 @@
 import classes from "./FutureStep.module.css";
-import whatNextLabel from "../../../assets/bleuwater/what-next-label.png";
+import whatNextLabel from "../../../assets/bleuwater/what-next-label.webp";
 
 const FutureStep = () => {
   return (

@@ -1,6 +1,6 @@
 import classes from "./TestPhase.module.css";
-import testPhaseImage from "../../../assets/commehub/test-phase.png";
-import testPhaseLabel from "../../../assets/commehub/test-phase-label.png";
+import testPhaseImage from "../../../assets/commehub/test-phase.webp";
+import testPhaseLabel from "../../../assets/commehub/test-phase-label.webp";
 
 const TestPhase = () => {
   return (

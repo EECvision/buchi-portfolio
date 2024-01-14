@@ -1,5 +1,5 @@
 import classes from "./UsabilityTest.module.css";
-import usabilityTestLabel from "../../../assets/bleuwater/usability-test-label.png";
+import usabilityTestLabel from "../../../assets/bleuwater/usability-test-label.webp";
 
 const UsabilityTest = () => {
   return (

@@ -1,5 +1,5 @@
-import theProcessLabel from "../../../assets/bleuwater/the-process-label.png";
-import theProcessImage from "../../../assets/bleuwater/the-process-image.png";
+import theProcessLabel from "../../../assets/bleuwater/the-process-label.webp";
+import theProcessImage from "../../../assets/bleuwater/the-process-image.webp";
 import classes from "./TheProcess.module.css";
 
 const TheProcess = () => {

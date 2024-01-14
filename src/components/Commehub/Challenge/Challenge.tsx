@@ -1,5 +1,5 @@
 import classes from "./Challenge.module.css";
-import challengeLabel from "../../../assets/commehub/challenge-label.png";
+import challengeLabel from "../../../assets/commehub/challenge-label.webp";
 
 const Challenge = () => {
   return (

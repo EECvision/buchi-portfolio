@@ -1,8 +1,8 @@
 import classes from "./Clients.module.css";
-import client1 from "../../../assets/landing-page/project-bleuwater.png";
-import client2 from "../../../assets/landing-page/project-creeo.png";
-import client3 from "../../../assets/landing-page/project-genadrop.png";
-import client4 from "../../../assets/landing-page/project-minority.png";
+import client1 from "../../../assets/landing-page/project-bleuwater.webp";
+import client2 from "../../../assets/landing-page/project-creeo.webp";
+import client3 from "../../../assets/landing-page/project-genadrop.webp";
+import client4 from "../../../assets/landing-page/project-minority.webp";
 //
 import { useEffect, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

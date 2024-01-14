@@ -1,5 +1,5 @@
 import classes from "./Competitors.module.css";
-import competitorsLabel from "../../../assets/commehub/competitors-label.png";
+import competitorsLabel from "../../../assets/commehub/competitors-label.webp";
 import LinkIcon from "../../../assets/commehub/icon-link.svg";
 
 const Competitors = () => {

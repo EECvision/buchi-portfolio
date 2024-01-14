@@ -1,13 +1,13 @@
 import classes from "./VisualDesign.module.css";
-import visualDesignImage1 from "../../../assets/commehub/visual-1.png";
+import visualDesignImage1 from "../../../assets/commehub/visual-1.webp";
 import visualDesignImage2 from "../../../assets/commehub/visual-2.png";
-import visualDesignImage3 from "../../../assets/commehub/visual-3.png";
-import visualDesignImage4 from "../../../assets/commehub/visual-4.png";
-import visualDesignImage5 from "../../../assets/commehub/visual-5.png";
-import visualDesignImage6 from "../../../assets/commehub/visual-6.png";
-import visualDesignImage7 from "../../../assets/commehub/visual-7.png";
-import visualDesignImage8 from "../../../assets/commehub/visual-8.png";
-import visualDesignLabel from "../../../assets/commehub/visual-label.png";
+import visualDesignImage3 from "../../../assets/commehub/visual-3.webp";
+import visualDesignImage4 from "../../../assets/commehub/visual-4.webp";
+import visualDesignImage5 from "../../../assets/commehub/visual-5.webp";
+import visualDesignImage6 from "../../../assets/commehub/visual-6.webp";
+import visualDesignImage7 from "../../../assets/commehub/visual-7.webp";
+import visualDesignImage8 from "../../../assets/commehub/visual-8.webp";
+import visualDesignLabel from "../../../assets/commehub/visual-label.webp";
 
 const VisualDesign = () => {
   return (

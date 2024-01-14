@@ -1,8 +1,8 @@
 import classes from "./UserPersona.module.css";
-import componentImage from "../../../assets/component.png";
+import componentImage from "../../../assets/component.webp";
 import userPersonaImage from "../../../assets/user-persona.png";
-import persona1 from "../../../assets/persona-1.png";
-import persona2 from "../../../assets/persona-2.png";
+import persona1 from "../../../assets/persona-1.webp";
+import persona2 from "../../../assets/persona-2.webp";
 
 const UserPersona = () => {
   return (

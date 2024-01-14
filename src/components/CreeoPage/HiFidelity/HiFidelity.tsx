@@ -1,12 +1,12 @@
 import classes from "./HiFidelity.module.css";
-import highFidelityImage from "../../../assets/hi-fidelity.png";
-import fidelity1 from "../../../assets/fidelity-1.png";
-import fidelity2 from "../../../assets/fidelity-2.png";
-import fidelity3 from "../../../assets/fidelity-3.png";
-import fidelity4 from "../../../assets/fidelity-4.png";
-import fidelity5 from "../../../assets/fidelity-5.png";
-import fidelity6 from "../../../assets/fidelity-6.png";
-import fidelityBg from "../../../assets/fidelity-bg.png";
+import highFidelityImage from "../../../assets/hi-fidelity.webp";
+import fidelity1 from "../../../assets/fidelity-1.webp";
+import fidelity2 from "../../../assets/fidelity-2.webp";
+import fidelity3 from "../../../assets/fidelity-3.webp";
+import fidelity4 from "../../../assets/fidelity-4.webp";
+import fidelity5 from "../../../assets/fidelity-5.webp";
+import fidelity6 from "../../../assets/fidelity-6.webp";
+import fidelityBg from "../../../assets/fidelity-bg.webp";
 import PlayIcon from "../../../assets/play.svg";
 
 const HiFidelity = () => {

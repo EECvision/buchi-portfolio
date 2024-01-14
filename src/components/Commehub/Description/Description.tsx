@@ -1,5 +1,5 @@
 import classes from "./Description.module.css";
-import descriptionImage from "../../../assets/commehub/landing.png";
+import descriptionImage from "../../../assets/commehub/landing.webp";
 
 const Description = () => {
   return (

@@ -1,6 +1,6 @@
 import classes from "./UserFlow.module.css";
-import userflowImage from "../../../assets/commehub/userflow.png";
-import userflowLabel from "../../../assets/commehub/userflow-label.png";
+import userflowImage from "../../../assets/commehub/userflow.webp";
+import userflowLabel from "../../../assets/commehub/userflow-label.webp";
 
 const UserFlow = () => {
   return (

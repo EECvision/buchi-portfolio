@@ -1,5 +1,5 @@
 import classes from "./FeedbackLoop.module.css";
-import feedbackLoopImage from "../../../assets/bleuwater/feedback-loop-image.png";
+import feedbackLoopImage from "../../../assets/bleuwater/feedback-loop-image.webp";
 
 const FeedbackLoop = () => {
   return (

@@ -1,11 +1,11 @@
 import classes from "./Brand.module.css";
-import brand1 from "../../../assets/brand-1.png";
-import brand2 from "../../../assets/brand-2.png";
-import brand3 from "../../../assets/brand-3.png";
-import brand4 from "../../../assets/brand-4.png";
-import brand5 from "../../../assets/brand-5.png";
-import brand6 from "../../../assets/brand-6.png";
-import brand7 from "../../../assets/brand-7.png";
+import brand1 from "../../../assets/brand-1.webp";
+import brand2 from "../../../assets/brand-2.webp";
+import brand3 from "../../../assets/brand-3.webp";
+import brand4 from "../../../assets/brand-4.webp";
+import brand5 from "../../../assets/brand-5.webp";
+import brand6 from "../../../assets/brand-6.webp";
+import brand7 from "../../../assets/brand-7.webp";
 
 const Brand = () => {
   return (

@@ -1,9 +1,9 @@
 import classes from "./DigitalCollection.module.css";
-import animation1 from "../../../assets/bleuwater/animation-1.png";
-import animation2 from "../../../assets/bleuwater/animation-2.png";
-import animation3 from "../../../assets/bleuwater/animation-3.png";
-import animation4 from "../../../assets/bleuwater/animation-4.png";
-import animation5 from "../../../assets/bleuwater/animation-5.png";
+import animation1 from "../../../assets/bleuwater/animation-1.webp";
+import animation2 from "../../../assets/bleuwater/animation-2.webp";
+import animation3 from "../../../assets/bleuwater/animation-3.webp";
+import animation4 from "../../../assets/bleuwater/animation-4.webp";
+import animation5 from "../../../assets/bleuwater/animation-5.webp";
 
 const DigitalCollection = () => {
   return (

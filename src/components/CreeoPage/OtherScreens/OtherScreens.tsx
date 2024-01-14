@@ -1,7 +1,7 @@
 import classes from "./OtherScreens.module.css";
-import otherScreensImage from "../../../assets/other-screens.png";
-import otherScreens1 from "../../../assets/other-screens-1.png";
-import otherScreens2 from "../../../assets/other-screens-2.png";
+import otherScreensImage from "../../../assets/other-screens.webp";
+import otherScreens1 from "../../../assets/other-screens-1.webp";
+import otherScreens2 from "../../../assets/other-screens-2.webp";
 
 const OtherScreens = () => {
   return (
