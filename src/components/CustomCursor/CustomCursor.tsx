@@ -134,7 +134,7 @@ const CustomCursor = () => {
         {component === "project" && (
           <div className={`${classes.project} ${classes[size]}`}>
             <div className={classes.text}>
-              Click to <br /> view
+              view case <br /> study
             </div>
           </div>
         )}
