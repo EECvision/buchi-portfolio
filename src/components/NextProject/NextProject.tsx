@@ -10,7 +10,7 @@ const NextProject = ({ link }: { link: string }) => {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    locomotiveScroll.scrollTo("#nested-page-container");
+    locomotiveScroll.scrollTo("#nested-page-container", { immediate: true });
     navigate(link);
   };
 

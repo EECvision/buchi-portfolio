@@ -17,9 +17,13 @@ const Footer = ({ isPage }: { isPage?: boolean }) => {
 
   const handleScrollToTop = () => {
     if (isPage) {
-      locomotiveScroll.scrollTo("#nested-page-container");
+      locomotiveScroll.scrollTo("#nested-page-container", {
+        immediate: true,
+      });
     } else {
-      locomotiveScroll.scrollTo("#overlay");
+      locomotiveScroll.scrollTo("#overlay", {
+        immediate: true,
+      });
     }
     // document.documentElement.scrollTop = 0;
   };

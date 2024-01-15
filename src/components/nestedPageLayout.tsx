@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./Footer/Footer";
 import { useContext, useEffect } from "react";
 import { ScrollContext } from "../context/LocomotiveScroll/scrollContext";
@@ -6,15 +6,19 @@ import classes from "./nestedPageLayout.module.css";
 
 const NestedPageLayout = () => {
   const { locomotiveScroll } = useContext(ScrollContext);
+  const location = useLocation();
 
   useEffect(() => {
     if (locomotiveScroll) {
-      locomotiveScroll.scrollTo("#nested-page-container");
+      locomotiveScroll.scrollTo("#nested-page-container", {
+        immediate: true,
+      });
     }
-  }, [locomotiveScroll]);
+  }, [locomotiveScroll, location]);
 
   return (
-    <div id="nested-page-container">
+    <div>
+      <div id="nested-page-container"></div>
       <Outlet />
       <div className={classes.wrapper}>
         <Footer isPage />
