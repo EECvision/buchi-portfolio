@@ -1,7 +1,22 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import classes from "./HappyToWork.module.css";
 import Envelop from "../../assets/envelop.svg";
+import copyHead from "../../assets/icon-copy-head.svg";
+import copiedHead from "../../assets/icon-copied-head.svg";
+import { useState } from "react";
 
 const HappyToWork = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = (event: any) => {
+    event.stopPropagation();
+    navigator.clipboard.writeText("Hello@Buchi.pro");
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 650);
+  };
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.container}>
@@ -18,13 +33,26 @@ const HappyToWork = () => {
         </div>
         <div className={classes.pointer}>👇</div>
 
-        <div className={classes.emailContainer}>
+        <div onClick={handleCopy} className={classes.emailContainer}>
           <div className={classes.envelopIcon}>
-            <img src={Envelop} alt="" />
+            {copied ? (
+              <img src={copiedHead} alt="" />
+            ) : (
+              <>
+                <img className={classes.envelop} src={Envelop} alt="" />
+                <img className={classes.head} src={copyHead} alt="" />
+              </>
+            )}
           </div>
           <div className={classes.textContainer}>
-            <div>Buchi@design.me</div>
-            {/* <div>Copy e-mail</div> */}
+            {copied ? (
+              <div>Copied e-mail</div>
+            ) : (
+              <>
+                <div className={classes.envelop}>Hello@Buchi.pro</div>
+                <div className={classes.head}>Copy e-mail</div>
+              </>
+            )}
           </div>
         </div>
       </div>

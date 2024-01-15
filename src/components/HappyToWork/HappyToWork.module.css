@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 217px;
+  /* width: 217px; */
   height: 66px;
   flex-shrink: 0;
   display: flex;
@@ -59,7 +59,21 @@
   background: rgba(18, 18, 18, 0.76);
   backdrop-filter: blur(35px);
   padding: 11px 10px;
+  padding-right: 34px;
   gap: 11px;
+  cursor: pointer;
+}
+
+.head {
+  display: none;
+}
+
+.emailContainer:hover .head {
+  display: block;
+}
+
+.emailContainer:hover .envelop {
+  display: none;
 }
 
 .envelopIcon {
