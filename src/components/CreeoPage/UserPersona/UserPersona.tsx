@@ -1,6 +1,6 @@
 import classes from "./UserPersona.module.css";
 import componentImage from "../../../assets/component.webp";
-import userPersonaImage from "../../../assets/user-persona.png";
+import userPersonaImage from "../../../assets/user-persona.webp";
 import persona1 from "../../../assets/persona-1.webp";
 import persona2 from "../../../assets/persona-2.webp";
 

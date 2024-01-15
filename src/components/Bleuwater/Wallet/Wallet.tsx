@@ -1,6 +1,6 @@
 import classes from "./Wallet.module.css";
-import walletImage1 from "../../../assets/bleuwater/wallet-connect-1.png";
-import walletImage2 from "../../../assets/bleuwater/wallet-connect-2.png";
+import walletImage1 from "../../../assets/bleuwater/wallet-connect-1.webp";
+import walletImage2 from "../../../assets/bleuwater/wallet-connect-2.webp";
 
 const Wallet = () => {
   return (

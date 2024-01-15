@@ -1,5 +1,5 @@
 import classes from "./Visualization.module.css";
-import VisualizationImage from "../../../assets/visualization.png";
+import VisualizationImage from "../../../assets/visualization.webp";
 import creeoVisual from "../../../assets/creeo-visual.webp";
 import processMap from "../../../assets/process-map.webp";
 import process from "../../../assets/process.webp";

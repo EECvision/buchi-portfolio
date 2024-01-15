@@ -1,7 +1,7 @@
 import classes from "./Persona.module.css";
 import personaImage1 from "../../../assets/commehub/persona-1.webp";
 import personaImage2 from "../../../assets/commehub/persona-2.webp";
-import personaLabel from "../../../assets/commehub/persona-label.png";
+import personaLabel from "../../../assets/commehub/persona-label.webp";
 
 const Persona = () => {
   return (

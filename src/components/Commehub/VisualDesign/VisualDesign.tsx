@@ -1,6 +1,6 @@
 import classes from "./VisualDesign.module.css";
 import visualDesignImage1 from "../../../assets/commehub/visual-1.webp";
-import visualDesignImage2 from "../../../assets/commehub/visual-2.png";
+import visualDesignImage2 from "../../../assets/commehub/visual-2.webp";
 import visualDesignImage3 from "../../../assets/commehub/visual-3.webp";
 import visualDesignImage4 from "../../../assets/commehub/visual-4.webp";
 import visualDesignImage5 from "../../../assets/commehub/visual-5.webp";

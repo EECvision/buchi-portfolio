@@ -1,6 +1,6 @@
 import classes from "./DigitalWireframe.module.css";
 import digitalWireframeImage from "../../../assets/digital-wireframe.webp";
-import wireframeDesign from "../../../assets/wireframe-design.png";
+import wireframeDesign from "../../../assets/wireframe-design.webp";
 
 const DigitalWireframe = () => {
   return (

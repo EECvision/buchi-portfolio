@@ -1,5 +1,5 @@
 import classes from "./Evaluations.module.css";
-import before from "../../../assets/before.png";
+import before from "../../../assets/before.webp";
 import after from "../../../assets/after.webp";
 
 const Evaluations = () => {

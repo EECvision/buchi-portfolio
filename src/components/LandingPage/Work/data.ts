@@ -1,6 +1,6 @@
-import creeo from "../../../assets/creeo-1.png";
-import commehub from "../../../assets/commehub.png";
-import bleuwater from "../../../assets/bleuwater.png";
+import creeo from "../../../assets/creeo-1.webp";
+import commehub from "../../../assets/commehub.webp";
+import bleuwater from "../../../assets/bleuwater.webp";
 
 export interface Project {
   image: string;

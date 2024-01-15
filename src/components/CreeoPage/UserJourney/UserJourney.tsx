@@ -1,5 +1,5 @@
 import classes from "./UserJourney.module.css";
-import userJourneyImage from "../../../assets/user-journey.png";
+import userJourneyImage from "../../../assets/user-journey.webp";
 
 const UserJourney = () => {
   return (

@@ -1,5 +1,5 @@
 import classes from "./UserFlow.module.css";
-import userflow from "../../../assets/userflow.png";
+import userflow from "../../../assets/userflow.webp";
 
 const UserFlow = () => {
   return (

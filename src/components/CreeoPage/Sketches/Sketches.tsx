@@ -1,5 +1,5 @@
 import classes from "./Sketches.module.css";
-import sketchImage from "../../../assets/sketches.png";
+import sketchImage from "../../../assets/sketches.webp";
 import sketch1 from "../../../assets/sketch1.webp";
 import sketch2 from "../../../assets/sketch2.webp";
 import sketch3 from "../../../assets/sketch3.webp";

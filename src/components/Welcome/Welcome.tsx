@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import classes from "./Welcome.module.css";
 import gsap from "gsap";
-import emoji from "../../assets/landing-page/emoji.png";
+import emoji from "../../assets/landing-page/emoji.webp";
 // import fonts from "../../fonts"
 
 const Welcome = () => {
