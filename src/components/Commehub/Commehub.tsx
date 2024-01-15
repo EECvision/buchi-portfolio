@@ -35,7 +35,7 @@ const Commehub = () => {
       <OtherScreens />
       <TestPhase />
       <Prototype />
-      <NextProject />
+      <NextProject link="/work/bleuwater" />
       <HappyToWork />
     </div>
   );

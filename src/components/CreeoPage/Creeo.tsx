@@ -39,7 +39,7 @@ const Creeo = () => {
       <Evaluations />
       <FutureSteps />
       <Reflection />
-      <NextProject />
+      <NextProject link="/work/commehub" />
       <HappyToWork />
     </div>
   );

@@ -41,7 +41,7 @@ const Bleuwater = () => {
       <ProductImpact />
       <Experience />
       <FutureStep />
-      <NextProject />
+      <NextProject link="/work/creeo" />
       <HappyToWork />
     </div>
   );
