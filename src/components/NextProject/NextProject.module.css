@@ -22,7 +22,7 @@
 .line {
   width: 1px;
   height: 168px;
-  background: linear-gradient(270deg, #545454 0%, rgba(84, 84, 84, 0) 85.71%);
+  background: linear-gradient(to top, #545454 0%, rgba(84, 84, 84, 0) 85.71%);
 }
 
 .container img {
