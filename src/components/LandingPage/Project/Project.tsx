@@ -28,11 +28,13 @@ const ProjectPage = ({ data }: ProjectProps) => {
   };
 
   return (
-    <div className={`${classes.container} work-card`}>
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className={`${classes.container} work-card`}
+    >
       <div
         onClick={() => handleNavigate(link)}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
         className={classes.imageContainer}
       >
         <img src={image} alt="" />
