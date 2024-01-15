@@ -42,8 +42,8 @@
 
 .loadingContainer {
   height: 100vh;
-  width: 100%;
-  max-width: 380px;
+  /* width: 100%;
+  max-width: 380px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,6 +67,14 @@
   font-weight: 500;
   line-height: 28px; /* 200% */
   letter-spacing: 0.14px;
+  padding-right: 16px;
+}
+
+.counterContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .counter {
@@ -79,7 +87,8 @@
   letter-spacing: 3px;
   margin-bottom: 27px;
   animation: countTo100 50s linear forwards;
-  width: 380px;
+  width: 340px;
+  text-align: right;
 }
 
 .emoji {
@@ -88,7 +97,7 @@
 }
 
 .loadingContainer .description {
-  text-align: left;
+  text-align: right;
 }
 
 @media screen and (max-width: 768px) {
@@ -100,10 +109,15 @@
 
   .description {
     font-size: 14px;
+    padding-right: 0;
   }
 
   .loadingContainer {
     right: unset;
+  }
+
+  .counterContainer {
+    align-items: center;
   }
 
   .counter,

@@ -11,8 +11,6 @@ const Welcome = () => {
 
   const init = async () => {
     // Load the font
-    console.log("font loading");
-
     await document.fonts.ready;
     setIsFontsLoaded(true);
     // layout
@@ -41,11 +39,18 @@ const Welcome = () => {
         onComplete: () => {
           increment();
         },
+      })
+      .from("#welcome-description", {
+        opacity: 0,
+        scale: 0.9,
+        delay: 0.1,
+        duration: 0.1,
+        ease: "back",
       });
 
     let counter = 1;
     const increment = () => {
-      if (counter <= 100) {
+      if (counter <= 90) {
         setCounter(counter + "%");
         counter++;
         setTimeout(
@@ -121,10 +126,10 @@ const Welcome = () => {
       }`}
     >
       <div className={classes.loadingContainer}>
-        <div id="welcome-counter">
+        <div className={classes.counterContainer} id="welcome-counter">
           <div className={classes.counter}>{loaderCounter}</div>
-          <div className={classes.description}>
-            Loading really cool stuff, you will <br /> love it, Promise!
+          <div id="welcome-description" className={classes.description}>
+            Loading really cool stuff, you will love it, <br /> Promise!
           </div>
         </div>
 
