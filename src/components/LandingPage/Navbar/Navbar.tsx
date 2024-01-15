@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import classes from "./Navbar.module.css";
-import ArrowDown from "../../../assets/landing-page/arrow-down.svg";
 import CustomDragV2 from "../../CustomDragV2/CustomDragV2";
 import CustomButtonV2 from "../../CustomButtonV2/CustomButtonV2";
 import { useContext, useRef } from "react";
@@ -64,10 +63,13 @@ const Navbar = () => {
           bouce
           customRef={item1Ref4}
         >
-          <CustomButtonV2 ref={item1Ref4}>
-            <div className={classes.item}>
-              <span>Resume</span>
-              <img src={ArrowDown} alt="" />
+          <CustomButtonV2
+            ref={item1Ref4}
+            offsetContainer={{ x: 0.1, y: 0.2 }}
+            offsetContent={{ x: 0.01, y: 0.2 }}
+          >
+            <div className={`${classes.item} ${classes.link}`}>
+              <span>Hire me on upwork</span>
             </div>
           </CustomButtonV2>
         </CustomDragV2>

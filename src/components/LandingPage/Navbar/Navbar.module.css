@@ -75,6 +75,23 @@
   padding: 8px 0;
 }
 
+.link {
+  border-radius: 100px;
+  background: #f4821e;
+  width: 176px;
+  height: 51px;
+  flex-shrink: 0;
+  /* text */
+  color: #fff;
+  font-family: Poppins;
+  font-size: 13.518px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19.746px; /* 146.071% */
+  letter-spacing: 0.203px;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: calc(1440px + 24px)) {
   .container {
     padding: 0 48px;
