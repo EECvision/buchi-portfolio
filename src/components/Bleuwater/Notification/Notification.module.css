@@ -12,7 +12,7 @@
   width: 100%;
   max-width: 1080px;
   border-radius: 14px;
-  border: 1px solid #f2994a;
+  border: 1px solid #f4821e;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -22,7 +22,7 @@
 
 .text {
   flex: 1;
-  color: #f2994a;
+  color: #f4821e;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;

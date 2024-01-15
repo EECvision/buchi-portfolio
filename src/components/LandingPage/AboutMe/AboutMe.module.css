@@ -27,6 +27,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  padding: 32px 0;
 }
 
 .mainText {
@@ -118,7 +119,7 @@
 }
 
 .accent {
-  color: #f2994a;
+  color: #f4821e;
   font-family: Poppins;
   font-size: 24px;
   font-style: normal;
@@ -175,6 +176,33 @@
 .track.active .innerTrack {
   background: #f4821e;
   opacity: 1;
+}
+
+.resumeLinkContainer {
+  width: max-content;
+}
+
+.resumeLink {
+  color: #d1d1d1;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px; /* 343.75% */
+  letter-spacing: 0.24px;
+  text-decoration-line: underline;
+  /*  */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5.32px;
+  cursor: pointer;
+  width: max-content;
+  align-self: flex-start;
+}
+
+.resumeLink.enter {
+  color: #f4821e;
 }
 
 @media screen and (max-width: calc(1440px + 24px)) {
@@ -246,6 +274,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    padding-top: 0;
   }
 
   .displayContainer {

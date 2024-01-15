@@ -4,13 +4,23 @@ import buchi from "../../../assets/landing-page/buchi-image4.png";
 import { about } from "./data";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import TextSlideV2 from "../../TextSlideV2/TextSlideV2";
 import TextFade from "../../TextFade/TextFade";
+import downloadIcon from "../../../assets/download-icon.svg";
+import CustomDragV2, { MouseTrack } from "../../CustomDragV2/CustomDragV2";
+import CustomButtonV2 from "../../CustomButtonV2/CustomButtonV2";
 
 const AboutMe = () => {
+  const downloadRef = useRef(null);
+
   const [state, setState] = useState<"enter" | "leave">("leave");
   const [intersectCount, setIntersectCount] = useState(0);
+  const [mouseTrack, setMouseTrack] = useState<Record<string, MouseTrack>>({});
+
+  const handleMouseTrack = (e: MouseTrack, key: string) => {
+    setMouseTrack((track) => ({ ...track, [key]: e }));
+  };
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -136,6 +146,30 @@ const AboutMe = () => {
           {mobileText}
           <TextFade trigger={state === "enter"} delay={0.6}>
             <div className={classes.text}>Currently designing @Bleuwater</div>
+          </TextFade>
+        </div>
+        <div className={classes.resumeLinkContainer}>
+          <TextFade trigger={state === "enter"} delay={0.7}>
+            <CustomDragV2
+              // onClick={() => handleDownload}
+              customRef={downloadRef}
+              onMouseTrack={(e) => handleMouseTrack(e, "download")}
+            >
+              <CustomButtonV2
+                layoutClass={classes.layout}
+                offsetContainer={{ x: 0.2, y: 0.3 }}
+                offsetContent={{ x: 0.01, y: 0.3 }}
+                ref={downloadRef}
+              >
+                <div
+                  className={`${classes.resumeLink} ${
+                    classes[mouseTrack["download"]]
+                  }`}
+                >
+                  Download Resume <img src={downloadIcon} alt="" />
+                </div>
+              </CustomButtonV2>
+            </CustomDragV2>
           </TextFade>
         </div>
       </div>
