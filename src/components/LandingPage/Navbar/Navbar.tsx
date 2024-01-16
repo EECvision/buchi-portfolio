@@ -11,7 +11,9 @@ const Navbar = () => {
   const handleScrollIntoView = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      locomotiveScroll.scrollTo(element);
+      locomotiveScroll.scrollTo(element, {
+        offset: id === "Work" ? -20 : 0,
+      });
     }
   };
 
@@ -63,11 +65,7 @@ const Navbar = () => {
           bouce
           customRef={item1Ref4}
         >
-          <CustomButtonV2
-            ref={item1Ref4}
-            offsetContainer={{ x: 0.1, y: 0.2 }}
-            offsetContent={{ x: 0.01, y: 0.2 }}
-          >
+          <CustomButtonV2 layoutClass={classes.linkLayout} ref={item1Ref4}>
             <div className={`${classes.item} ${classes.link}`}>
               <span>Hire me on upwork</span>
             </div>

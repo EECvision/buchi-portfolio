@@ -7,14 +7,29 @@ import { useState } from "react";
 
 const HappyToWork = () => {
   const [copied, setCopied] = useState(false);
+  const [hover, setHover] = useState(false);
+  const [enableHover, setEnableHover] = useState(true);
 
   const handleCopy = (event: any) => {
     event.stopPropagation();
     navigator.clipboard.writeText("Hello@Buchi.pro");
     setCopied(true);
+    setEnableHover(false);
+    setHover(false);
     setTimeout(() => {
       setCopied(false);
     }, 650);
+  };
+
+  const handleMouseEnter = () => {
+    if (enableHover) {
+      setHover(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setEnableHover(true);
+    setHover(false);
   };
 
   return (
@@ -33,10 +48,15 @@ const HappyToWork = () => {
         </div>
         <div className={classes.pointer}>👇</div>
 
-        <div onClick={handleCopy} className={classes.emailContainer}>
+        <div
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          onClick={handleCopy}
+          className={`${classes.emailContainer} ${hover && classes.hover}`}
+        >
           <div className={classes.envelopIcon}>
             {copied ? (
-              <img src={copiedHead} alt="" />
+              <img className={classes.copied} src={copiedHead} alt="" />
             ) : (
               <>
                 <img className={classes.envelop} src={Envelop} alt="" />
@@ -46,12 +66,14 @@ const HappyToWork = () => {
           </div>
           <div className={classes.textContainer}>
             {copied ? (
-              <div>Copied e-mail</div>
+              <div className={`${classes.bItem} ${classes.copied}`}>
+                Copied e-mail
+              </div>
             ) : (
-              <>
-                <div className={classes.envelop}>Hello@Buchi.pro</div>
-                <div className={classes.head}>Copy e-mail</div>
-              </>
+              <div className={classes.scrollSpace}>
+                <div className={classes.bItem}>Hello@Buchi.pro</div>
+                <div className={classes.bItem}>Copy e-mail</div>
+              </div>
             )}
           </div>
         </div>

@@ -49,7 +49,10 @@ const Dropdown = () => {
     const element = document.getElementById(id);
     if (element) {
       setToggleCross(false);
-      locomotiveScroll.scrollTo(element);
+      locomotiveScroll.scrollTo(element, {
+        offset: -20,
+        immediate: true,
+      });
     }
   };
 

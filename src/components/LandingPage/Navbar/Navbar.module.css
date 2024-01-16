@@ -75,12 +75,15 @@
   padding: 8px 0;
 }
 
-.link {
+.linkLayout {
   border-radius: 100px;
   background: #f4821e;
   width: 176px;
   height: 51px;
   flex-shrink: 0;
+}
+
+.link {
   /* text */
   color: #fff;
   font-family: Poppins;

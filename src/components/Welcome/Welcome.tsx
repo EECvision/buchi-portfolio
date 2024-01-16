@@ -1,13 +1,18 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import classes from "./Welcome.module.css";
 import gsap from "gsap";
 import emoji from "../../assets/landing-page/emoji.webp";
+import { useLocation } from "react-router-dom";
 // import fonts from "../../fonts"
 
 const Welcome = () => {
   const [loading, setLoading] = useState(true);
   const [loaderCounter, setCounter] = useState("1%");
   const [isFontsLoaded, setIsFontsLoaded] = useState(false);
+  const [styleElement, setStyleElement] = useState<any>(null);
+
+  const location = useLocation();
 
   const init = async () => {
     // Load the font
@@ -115,9 +120,47 @@ const Welcome = () => {
     };
   };
 
+  const removeScrollbarStyle = () => {
+    if (styleElement) {
+      // Remove the style element from the document's head
+      styleElement?.parentNode?.removeChild(styleElement);
+      setStyleElement(null); // Reset the reference
+    }
+  };
+
   useEffect(() => {
     init();
   }, []);
+
+  useEffect(() => {
+    // Check if the browser is a WebKit browser (Chrome, Safari)
+    const isWebKit = "WebkitAppearance" in document.documentElement.style;
+
+    if (location.pathname.includes("work")) {
+      // Remove style if pathname includes 'work'
+      removeScrollbarStyle();
+    } else {
+      if (isWebKit) {
+        // Create a style element
+        const styleElement = document.createElement("style");
+
+        // Set the CSS rule to hide the scrollbar
+        styleElement.textContent = "body::-webkit-scrollbar { display: none; }";
+
+        // Append the style element to the document's head
+        document.head.appendChild(styleElement);
+
+        // Store a reference to the style element
+        setStyleElement(styleElement);
+      }
+    }
+
+    // Cleanup function
+    return () => {
+      // Remove the style element when the component unmounts
+      removeScrollbarStyle();
+    };
+  }, [location]);
 
   return (
     <div

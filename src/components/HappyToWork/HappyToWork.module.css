@@ -49,8 +49,8 @@
 .emailContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* width: 217px; */
+  justify-content: flex-start;
+  width: 217px;
   height: 66px;
   flex-shrink: 0;
   display: flex;
@@ -68,12 +68,36 @@
   display: none;
 }
 
-.emailContainer:hover .head {
+.emailContainer.hover .head {
   display: block;
 }
 
-.emailContainer:hover .envelop {
+.emailContainer.hover .envelop {
   display: none;
+}
+
+.emailContainer.hover .scrollSpace{
+  transform: translateY(-50%);
+}
+
+.head, .envelop {
+  animation: fadeIn 300ms forwards;
+}
+
+.copied {
+  animation: fadeIn 150ms forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-5%);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 .envelopIcon {
@@ -90,6 +114,7 @@
 }
 
 .textContainer {
+  flex: 1;
   color: #d9d9d9;
   font-family: Krona One;
   font-size: 10px;
@@ -98,6 +123,23 @@
   line-height: 26px;
   /* 260% */
   letter-spacing: 0.05px;
+  height: 42px;
+  overflow: hidden;
+}
+
+.scrollSpace {
+  width: 100%;
+  flex: 1;
+  height: auto;
+  transition: all 300ms;
+  transform: translateY(0);
+}
+
+.bItem {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .pointer {
