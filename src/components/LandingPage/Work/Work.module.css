@@ -164,3 +164,9 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .overlayImage {
+    display: none !important;
+  }
+}
