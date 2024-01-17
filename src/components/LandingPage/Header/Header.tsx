@@ -73,13 +73,12 @@ const Header = () => {
               <div
                 className={`${classes.btnContent} ${classes[mouseTrack || ""]}`}
               >
-                <span>Get in touch</span>
+                <div>Get in touch</div>
                 <div
                   className={`${classes.connectIcon} ${
                     classes[
-                      mouseTrack === "leave"
-                        ? "top-right"
-                        : mouseDir || "top-right"
+                      (mouseTrack === "leave" ? "top-right" : mouseDir) ||
+                        "top-right"
                     ]
                   }`}
                 >

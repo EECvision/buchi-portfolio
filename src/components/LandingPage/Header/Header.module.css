@@ -96,6 +96,12 @@
 
 .connectIcon {
   transition: transform 650ms;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
 }
 
 .mobileIcon {
