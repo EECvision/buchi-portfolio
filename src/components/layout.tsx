@@ -26,9 +26,9 @@ const Layout = () => {
   return (
     <div id="layout">
       <ScrollContextProvider locomotiveScroll={locomotiveScroll}>
-        {/* <Dropdown /> */}
+        <Dropdown />
         <Outlet />
-        {/* <Welcome /> */}
+        <Welcome />
       </ScrollContextProvider>
     </div>
   );
