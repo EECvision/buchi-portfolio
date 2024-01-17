@@ -181,7 +181,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className={classes.aboutContainer}>
-          {/* <div></div> */}
+          <div></div>
           {about.map((el, idx) => (
             <div key={idx} className={classes.aboutWrapper}>
               <div
@@ -196,7 +196,6 @@ const AboutMe = () => {
               </div>
             </div>
           ))}
-          {/* <div></div> */}
         </div>
         <div className={`${classes.tracker} about-tracker`}>
           {about.map((_, idx) => (
