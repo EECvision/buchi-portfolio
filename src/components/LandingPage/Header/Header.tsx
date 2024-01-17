@@ -70,7 +70,9 @@ const Header = () => {
               overlayClass={classes.btnOverlay}
               ref={btnRef}
             >
-              <div className={classes.btnContent}>
+              <div
+                className={`${classes.btnContent} ${classes[mouseTrack || ""]}`}
+              >
                 <span>Get in touch</span>
                 <div
                   className={`${classes.connectIcon} ${

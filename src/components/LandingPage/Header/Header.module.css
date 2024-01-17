@@ -86,6 +86,10 @@
   margin-bottom: -20px;
 }
 
+.btnContent.enter {
+  color: #fff;
+}
+
 .btnOverlay {
   background: #f4821e;
 }
