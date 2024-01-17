@@ -15,20 +15,20 @@
   border-radius: 50%;
   background: rgb(244, 130, 30, 0.6);
   filter: blur(80px);
-  transform: translateY(-35%);
+  transform: translateY(-30%);
 }
 
 .imageContainer,
 .imagePlaceholder,
 .image {
-  width: 384.512px;
+  width: 390.512px;
   height: 513px;
   position: absolute;
 }
 
 .imagePlaceholder,
 .imageContainer {
-  top: 6px;
+  top: 7px;
   transform: translateX(-64px) !important;
 }
 
@@ -218,7 +218,7 @@
 
 @media screen and (max-width: calc(1440px + 24px)) {
   .elipse {
-    transform: translateY(-55%);
+    transform: translateY(-50%);
     position: absolute;
   }
 }
