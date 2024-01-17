@@ -1,11 +1,11 @@
 .container {
   width: 100%;
-  max-width: 1377px;
+  max-width: 1392px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 23px;
+  padding: 8px 0;
   /* text */
   color: #d1d1d1;
   font-family: Poppins;
