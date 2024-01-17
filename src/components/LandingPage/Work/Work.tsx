@@ -11,7 +11,9 @@ import overlayImage from "../../../assets/overlay-4.webp";
 
 export const Work = () => {
   const btnRef = useRef(null);
-  const [addOverlay, setAddOverlay] = useState(false);
+  const [addOverlay, setAddOverlay] = useState<"none" | "first" | "second">(
+    "none"
+  );
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -109,10 +111,24 @@ export const Work = () => {
         end: "bottom bottom",
         pin: ".work-label",
         onEnter: () => {
-          setAddOverlay(true);
+          setAddOverlay("second");
         },
         onLeaveBack: () => {
-          setAddOverlay(false);
+          setAddOverlay("none");
+        },
+      },
+    });
+
+    gsap.timeline().to(".work-label", {
+      scrollTrigger: {
+        trigger: "#scroll-window",
+        start: "top 50%",
+        end: "bottom bottom",
+        onEnter: () => {
+          setAddOverlay("first");
+        },
+        onLeaveBack: () => {
+          setAddOverlay("none");
         },
       },
     });
@@ -122,9 +138,7 @@ export const Work = () => {
     <>
       <div
         id="Work"
-        className={`${classes.container} ${
-          addOverlay && classes.addOverlay
-        } work`}
+        className={`${classes.container} ${classes[addOverlay]} work`}
       >
         <img className={classes.overlayImage} src={overlayImage} alt="" />
 

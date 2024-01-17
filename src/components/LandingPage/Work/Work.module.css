@@ -4,8 +4,8 @@
   position: relative;
 }
 
-.container.addOverlay {
-  background: #313335;
+.container.second {
+  /* background: #313335; */
 }
 
 .overlayImage {
@@ -13,13 +13,22 @@
   height: 100%;
   object-fit: cover;
   position: fixed;
+  bottom: unset;
   top: 0;
   left: 0;
   display: none;
+  background: #313335;
 }
 
-.container.addOverlay .overlayImage {
+.container.second .overlayImage {
   display: block;
+}
+
+.container.first .overlayImage {
+  display: block;
+  top: unset;
+  bottom: 0;
+  height: 50%;
 }
 
 .wrapper {
