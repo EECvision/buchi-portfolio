@@ -46,7 +46,6 @@ const AboutMe = () => {
         end: "bottom bottom",
         pin: ".about-image",
         pinSpacing: false,
-        markers: true,
       });
 
       ScrollTrigger.create({
