@@ -1,15 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import classes from "./Work.module.css";
 import ProjectPage from "../Project/Project";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import CustomDragV2 from "../../CustomDragV2/CustomDragV2";
 import CustomButtonV2 from "../../CustomButtonV2/CustomButtonV2";
 import { projects } from "./data";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import overlayImage from "../../../assets/overlay-4.webp";
 
 export const Work = () => {
   const btnRef = useRef(null);
+  const [addOverlay, setAddOverlay] = useState(false);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -45,7 +47,6 @@ export const Work = () => {
                 trigger: elem,
                 start: "top bottom",
                 end: "bottom bottom",
-                // markers: true,
                 scrub: true,
               },
             })
@@ -65,7 +66,7 @@ export const Work = () => {
             .to(
               cards[idx + 1],
               {
-                boxShadow: "0px -92px 400px -68px rgba(0, 0, 0, 1)",
+                // boxShadow: "0px -92px 400px -68px rgba(0, 0, 0, 1)",
                 scrollTrigger: {
                   trigger: elem,
                   start: "top top",
@@ -107,13 +108,26 @@ export const Work = () => {
         start: "top 3.7%",
         end: "bottom bottom",
         pin: ".work-label",
+        onEnter: () => {
+          setAddOverlay(true);
+        },
+        onLeaveBack: () => {
+          setAddOverlay(false);
+        },
       },
     });
   }, []);
 
   return (
     <>
-      <div id="Work" className={`${classes.container} work`}>
+      <div
+        id="Work"
+        className={`${classes.container} ${
+          addOverlay && classes.addOverlay
+        } work`}
+      >
+        <img className={classes.overlayImage} src={overlayImage} alt="" />
+
         <div className={classes.wrapper}>
           <div className={classes.mobileLabel}>Featured Works</div>
           <div className={`${classes.scrollWrapper} work-scroll`}>

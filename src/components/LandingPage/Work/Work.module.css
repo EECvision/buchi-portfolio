@@ -2,7 +2,24 @@
   padding-bottom: 71px;
   margin-top: -116px;
   position: relative;
+}
+
+.container.addOverlay {
   background: #313335;
+}
+
+.overlayImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.container.addOverlay .overlayImage {
+  display: block;
 }
 
 .wrapper {

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import classes from "./AboutMe.module.css";
-import buchi from "../../../assets/landing-page/buchi-image4.png";
+import buchi from "../../../assets/landing-page/buchi-image4.webp";
 import { about } from "./data";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

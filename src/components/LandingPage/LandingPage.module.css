@@ -27,7 +27,19 @@
 
 .overlayImage {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.section3 .overlayImage {
+  display: none;
+}
+
+.section3 .overlayImage.show {
+  display: block;
 }
 
 .darkArea {
