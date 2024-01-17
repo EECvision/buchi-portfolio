@@ -196,6 +196,7 @@ const AboutMe = () => {
               </div>
             </div>
           ))}
+          <div></div>
         </div>
         <div className={`${classes.tracker} about-tracker`}>
           {about.map((_, idx) => (

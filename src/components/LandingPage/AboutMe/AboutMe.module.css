@@ -88,16 +88,16 @@
   gap: 202px;
 }
 
-.aboutContainer .aboutWrapper:last-child {
-  margin-bottom: 148px;
-}
-
 .aboutWrapper {
   width: 100%;
   /* flex-shrink: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.aboutContainer .aboutWrapper:last-child {
+  /* margin-bottom: 148px; */
 }
 
 .content {
