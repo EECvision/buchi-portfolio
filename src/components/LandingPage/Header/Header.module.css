@@ -29,7 +29,7 @@
 .imagePlaceholder,
 .imageContainer {
   top: 7px;
-  transform: translateX(-64px) !important;
+  transform: translateX(-64px);
 }
 
 .imagePlaceholder {
@@ -284,7 +284,7 @@
   }
 
   .imageContainer {
-    transform: translateX(-16px) !important;
+    transform: translateX(-16px);
   }
 
   .imagePlaceholder {
@@ -295,7 +295,7 @@
     top: unset;
     display: flex;
     justify-content: flex-end;
-    transform: translateX(0) !important;
+    transform: translateX(0);
     padding-right: 16px;
   }
 
