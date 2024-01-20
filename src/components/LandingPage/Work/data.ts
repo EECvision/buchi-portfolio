@@ -1,4 +1,4 @@
-import creeo from "../../../assets/creeo-1.webp";
+import creeo from "../../../assets/creeo.webp";
 import commehub from "../../../assets/commehub.webp";
 import bleuwater from "../../../assets/bleuwater.webp";
 

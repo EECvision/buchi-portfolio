@@ -66,9 +66,9 @@ export const Work = () => {
               },
             })
             .to(
-              cards[idx + 1],
+              cards[idx + 1]?.children[0],
               {
-                // boxShadow: "0px -92px 400px -68px rgba(0, 0, 0, 1)",
+                boxShadow: "0px -92px 400px -68px rgba(0, 0, 0, 1)",
                 scrollTrigger: {
                   trigger: elem,
                   start: "top top",
