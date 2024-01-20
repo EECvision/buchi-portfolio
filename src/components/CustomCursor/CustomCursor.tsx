@@ -33,7 +33,7 @@ const CustomCursor = () => {
         setScratchPad(cursorData);
         setReset(false);
       },
-      cursorData.component === "email" ? 0 : 450
+      cursorData.component === "email" ? 0 : 0
     );
     setReset(true);
   }, [cursorData]);
