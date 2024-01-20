@@ -121,6 +121,10 @@ const Dropdown = () => {
     }
   }, [cursorPosition]);
 
+  useEffect(() => {
+    console.log(mouseTrack);
+  }, [mouseTrack]);
+
   return (
     <div className={`${classes.wrapper} ${true && classes.show}`}>
       <div className={classes.fixed}>
