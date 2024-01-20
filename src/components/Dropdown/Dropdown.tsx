@@ -121,10 +121,6 @@ const Dropdown = () => {
     }
   }, [cursorPosition]);
 
-  useEffect(() => {
-    console.log(mouseTrack);
-  }, [mouseTrack]);
-
   return (
     <div className={`${classes.wrapper} ${true && classes.show}`}>
       <div className={classes.fixed}>
@@ -263,7 +259,7 @@ const Dropdown = () => {
                 </TextSlide>
               </div>
               <div className={classes.socialLinks}>
-                {/* <TextFade trigger={toggleCross} delay={1.25}> */}
+                <TextFade trigger={toggleCross} delay={1.25}>
                   <CustomDragV2
                     // onClick={() => handleLink("Work")}
                     customRef={twitterRef}
@@ -284,7 +280,7 @@ const Dropdown = () => {
                       </div>
                     </CustomButtonV2>
                   </CustomDragV2>
-                {/* </TextFade> */}
+                </TextFade>
 
                 <TextFade trigger={toggleCross} delay={1.27}>
                   <CustomDragV2
