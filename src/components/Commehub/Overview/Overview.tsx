@@ -1,11 +1,11 @@
 import classes from "./Overview.module.css";
-import overviewImage1 from "../../../assets/commehub/overview-1.webp";
-import overviewImage2 from "../../../assets/commehub/overview-2.webp";
-import overviewImage3 from "../../../assets/commehub/overview-3.webp";
 import overviewLabel from "../../../assets/commehub/overview-label.webp";
 import Logo from "../../../assets/commehub/logo.svg";
 import AppleIcon from "../../../assets/commehub/icon-apple.svg";
 import XIcon from "../../../assets/commehub/icon-x.svg";
+import v1 from "../../../assets/videos/Commehub/V1.webm";
+import v2 from "../../../assets/videos/Commehub/V2.webm";
+import v3 from "../../../assets/videos/Commehub/V3.webm";
 
 const leftQoute = (
   <svg
@@ -83,7 +83,7 @@ const Overview = () => {
 
         <div className={classes.sections}>
           <div className={classes.section}>
-            <img className={classes.image} src={overviewImage1} alt="" />
+            <video autoPlay muted loop className={classes.image} src={v1} />
             <div className={classes.details}>
               <div className={classes.title}>01.</div>
               <div className={classes.title}>Meaningful interaction</div>
@@ -104,11 +104,11 @@ const Overview = () => {
                 with few easy clicks.
               </div>
             </div>
-            <img className={classes.image} src={overviewImage2} alt="" />
+            <video autoPlay muted loop className={classes.image} src={v2} />
           </div>
 
           <div className={classes.section}>
-            <img className={classes.image} src={overviewImage3} alt="" />
+            <video autoPlay muted loop className={classes.image} src={v3} />
             <div className={classes.details}>
               <div className={classes.title}>03.</div>
               <div className={classes.title}>Start product groups</div>

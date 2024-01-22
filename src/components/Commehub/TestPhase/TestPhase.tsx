@@ -1,6 +1,8 @@
 import classes from "./TestPhase.module.css";
-import testPhaseImage from "../../../assets/commehub/test-phase.webp";
 import testPhaseLabel from "../../../assets/commehub/test-phase-label.webp";
+import phaseArrow from "../../../assets/commehub/phase-arrow.svg"
+import before from "../../../assets/videos/Commehub/Before.webm";
+import after from "../../../assets/videos/Commehub/After.webm";
 
 const TestPhase = () => {
   return (
@@ -24,7 +26,17 @@ const TestPhase = () => {
           Testers were uncertain about the outcome of clicking the ‘plus icon’
           because they are concerned about making a mistake.
         </div>
-        <img src={testPhaseImage} alt="" />
+        <div className={classes.testPhase}>
+          <img src={phaseArrow} alt="" />
+          <div className={classes.before}>
+            <video autoPlay muted loop src={before} />
+            <div className={classes.label}>Before</div>
+          </div>
+          <div className={classes.after}>
+            <video autoPlay muted loop src={after} />
+            <div className={classes.label}>After</div>
+          </div>
+        </div>
       </div>
     </div>
   );

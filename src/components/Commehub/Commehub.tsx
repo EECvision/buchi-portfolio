@@ -16,11 +16,34 @@ import banner from "../../assets/commehub/banner.webp";
 import Description from "./Description/Description";
 import HappyToWork from "../HappyToWork/HappyToWork";
 import NextProject from "../NextProject/NextProject";
+import vid from "../../assets/videos/Commehub/All videos sweet.webm";
+import expandIcon from "../../assets/commehub/icon-expand.svg";
 
 const Commehub = () => {
+  function openFullscreen() {
+    const videoElement = document.getElementById("myVideo");
+
+    if (!videoElement) return;
+
+    if (videoElement.requestFullscreen) {
+      videoElement.requestFullscreen();
+    }
+  }
+
   return (
     <div id="commehub-container" className={classes.container}>
-      <img className={classes.image} src={banner} alt="" />
+      <div className={classes.bannerImgContainer}>
+        <img className={classes.image} src={banner} alt="" />
+        <div className={classes.videoContainer}>
+          <video id="myVideo" autoPlay muted loop src={vid}></video>
+          <img
+            onClick={openFullscreen}
+            className={classes.expandIcon}
+            src={expandIcon}
+            alt=""
+          />
+        </div>
+      </div>
       <Description />
       <Overview />
       <Challenge />
