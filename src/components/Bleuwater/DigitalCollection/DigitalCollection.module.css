@@ -35,7 +35,8 @@
   gap: 10px;
 }
 
-.animationContainer img {
+.animationContainer img,
+.animationContainer video {
   width: 100%;
   height: auto;
   height: 100%;

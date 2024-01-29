@@ -1,6 +1,6 @@
 import classes from "./Prototype.module.css";
 import prototypeImage from "../../../assets/prototype.webp";
-import prototype1 from "../../../assets/prototype-1.webp";
+import prototype1 from "../../../assets/videos/Creeo/All.webm";
 
 const Prototype = () => {
   return (
@@ -19,7 +19,7 @@ const Prototype = () => {
               entire landing page more character and vibe.
             </div>
           </div>
-          <img src={prototype1} alt="" />
+          <video muted autoPlay loop src={prototype1} />
         </div>
         <div className={classes.prototype2}>
           <div className={classes.left}>

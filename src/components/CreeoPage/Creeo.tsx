@@ -1,5 +1,5 @@
 import classes from "./Creeo.module.css";
-import banner from "../../assets/creeo.webp";
+import banner from "../../assets/creeo-banner.webp";
 import AboutProject from "./AboutProject/AboutProject";
 import Visualization from "./Visualization/Visualization";
 import UserPersona from "./UserPersona/UserPersona";

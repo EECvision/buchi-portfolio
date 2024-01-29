@@ -1,6 +1,5 @@
 import classes from "./Wallet.module.css";
-import walletImage1 from "../../../assets/bleuwater/wallet-connect-1.webp";
-import walletImage2 from "../../../assets/bleuwater/wallet-connect-2.webp";
+import webWallet from "../../../assets/videos/Bleuwater/Connect Wallet.webm";
 
 const Wallet = () => {
   return (
@@ -27,8 +26,8 @@ const Wallet = () => {
         </div>
 
         <div className={classes.imageContainer}>
-          <img src={walletImage1} alt="" />
-          <img src={walletImage2} alt="" />
+          <video muted loop autoPlay src={webWallet} />
+          <video muted loop autoPlay src={webWallet} />
         </div>
       </div>
     </div>

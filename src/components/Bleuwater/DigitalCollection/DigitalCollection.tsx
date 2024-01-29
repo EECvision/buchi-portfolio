@@ -1,5 +1,5 @@
 import classes from "./DigitalCollection.module.css";
-import animation1 from "../../../assets/bleuwater/animation-1.webp";
+import animation1 from "../../../assets/videos/Bleuwater/1107.webm";
 import animation2 from "../../../assets/bleuwater/animation-2.webp";
 import animation3 from "../../../assets/bleuwater/animation-3.webp";
 import animation4 from "../../../assets/bleuwater/animation-4.webp";
@@ -23,7 +23,7 @@ const DigitalCollection = () => {
         </div>
         <div className={classes.animationContainer}>
           <div className={classes.animationA}>
-            <img src={animation1} alt="" />
+            <video controls muted autoPlay loop src={animation1}></video>
           </div>
           <div className={classes.animationB}>
             <div className={classes.animation2}>

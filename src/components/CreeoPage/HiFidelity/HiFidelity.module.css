@@ -118,7 +118,7 @@
   justify-content: flex-start;
 }
 
-.fidelity._1 img {
+.fidelity._1 video {
   width: 100%;
   max-width: 897px;
   height: auto;
@@ -132,7 +132,7 @@
   right: 48px;
 }
 
-.fidelity._2 img {
+.fidelity._2 video {
   width: 100%;
   max-width: 692px;
   height: auto;
@@ -143,7 +143,7 @@
   max-width: 323px;
 }
 
-.fidelity._3 img {
+.fidelity._3 video {
   width: 100%;
   max-width: 640px;
   height: auto;

@@ -1,5 +1,7 @@
 import classes from "./Splits.module.css";
-import splitImage from "../../../assets/bleuwater/splits.webp";
+import splitImage1 from "../../../assets/bleuwater/split-1.webp";
+import splitVideo from "../../../assets/videos/Bleuwater/Display1.webm";
+import splitImage3 from "../../../assets/bleuwater/split-3.webp";
 
 const Splits = () => {
   return (
@@ -15,7 +17,15 @@ const Splits = () => {
         </div>
 
         <div className={classes.imageContainer}>
-          <img src={splitImage} alt="" />
+          <img src={splitImage1} alt="" />
+          <img src={splitImage3} alt="" />
+          <video
+            muted
+            autoPlay
+            loop
+            className={classes.animation}
+            src={splitVideo}
+          />
         </div>
       </div>
     </div>

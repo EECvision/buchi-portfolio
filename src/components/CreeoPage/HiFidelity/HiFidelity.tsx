@@ -1,8 +1,8 @@
 import classes from "./HiFidelity.module.css";
 import highFidelityImage from "../../../assets/hi-fidelity.webp";
-import fidelity1 from "../../../assets/fidelity-1.webp";
-import fidelity2 from "../../../assets/fidelity-2.webp";
-import fidelity3 from "../../../assets/fidelity-3.webp";
+import fidelity1 from "../../../assets/videos/Creeo/1.webm";
+import fidelity2 from "../../../assets/videos/Creeo/2.webm";
+import fidelity3 from "../../../assets/videos/Creeo/3.webm";
 import fidelity4 from "../../../assets/fidelity-4.webp";
 import fidelity5 from "../../../assets/fidelity-5.webp";
 import fidelity6 from "../../../assets/fidelity-6.webp";
@@ -31,7 +31,7 @@ const HiFidelity = () => {
         </div>
         <div className={classes.fidelityContainer}>
           <div className={`${classes.fidelity} ${classes._1}`}>
-            <img src={fidelity1} alt="" />
+            <video muted loop autoPlay src={fidelity1}></video>
             <div className={classes.textContainer}>
               <div className={classes.title}>
                 Making it easy to generate NFTs
@@ -58,7 +58,7 @@ const HiFidelity = () => {
                 <div>Play</div>
               </div>
             </div>
-            <img src={fidelity2} alt="" />
+            <video muted loop autoPlay src={fidelity2}></video>
           </div>
           <div className={classes.wrapper}>
             <div className={`${classes.fidelity} ${classes._3}`}>
@@ -73,7 +73,7 @@ const HiFidelity = () => {
                   <div>Play</div>
                 </div>
               </div>
-              <img src={fidelity3} alt="" />
+              <video muted loop autoPlay src={fidelity3}></video>
             </div>
             <img className={classes.fidelityBg} src={fidelityBg} alt="" />
           </div>

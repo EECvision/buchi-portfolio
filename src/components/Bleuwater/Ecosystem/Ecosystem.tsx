@@ -1,5 +1,6 @@
 import classes from "./Ecosystem.module.css";
 import ecosystemImage from "../../../assets/bleuwater/ecosystem.webp";
+import ecosytemVideo from "../../../assets/videos/Bleuwater/Display.webm";
 
 const Ecosystem = () => {
   return (
@@ -16,6 +17,13 @@ const Ecosystem = () => {
         </div>
         <div className={classes.imageContainer}>
           <img src={ecosystemImage} alt="" />
+          <video
+            muted
+            autoPlay
+            loop
+            className={classes.animation}
+            src={ecosytemVideo}
+          />
         </div>
       </div>
     </div>

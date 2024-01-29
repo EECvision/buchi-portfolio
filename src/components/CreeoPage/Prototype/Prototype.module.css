@@ -84,7 +84,7 @@
   gap: 45px;
 }
 
-.prototype1 img {
+.prototype1 video {
   width: 100%;
   max-width: 731px;
   height: auto;
@@ -121,7 +121,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .prototype1 img {
+  .prototype1 video {
     max-width: 531px;
   }
 }

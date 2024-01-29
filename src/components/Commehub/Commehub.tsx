@@ -34,14 +34,9 @@ const Commehub = () => {
     <div id="commehub-container" className={classes.container}>
       <div className={classes.bannerImgContainer}>
         <img className={classes.image} src={banner} alt="" />
-        <div className={classes.videoContainer}>
+        <div onClick={openFullscreen} className={classes.videoContainer}>
           <video id="myVideo" autoPlay muted loop src={vid}></video>
-          <img
-            onClick={openFullscreen}
-            className={classes.expandIcon}
-            src={expandIcon}
-            alt=""
-          />
+          <img className={classes.expandIcon} src={expandIcon} alt="" />
         </div>
       </div>
       <Description />

@@ -7,7 +7,7 @@ import after from "../../../assets/videos/Commehub/After.webm";
 const TestPhase = () => {
   return (
     <div className={classes.container}>
-      <img className={classes.label} src={testPhaseLabel} alt="" />
+      <img className={classes.label1} src={testPhaseLabel} alt="" />
       <div className={classes.title}>Usability Tests</div>
       <div className={classes.description}>
         Following the completion of the prototype, Commehub underwent a series

@@ -18,18 +18,19 @@
   position: absolute;
   bottom: 26px;
   right: 33.43px;
-  width: 332.569px;
-  height: 187px;
+  width: 342.569px;
   flex-shrink: 0;
   border-radius: 12px;
+  height: auto;
   border: 1px solid #e1e1e1;
-  background: rgba(255, 255, 255, 0.73);
+  cursor: pointer;
   overflow: hidden;
 }
 
 .videoContainer video {
   width: 100%;
   height: auto;
+  margin-bottom: -4px;
 }
 
 .expandIcon {
