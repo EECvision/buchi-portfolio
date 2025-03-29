@@ -70,7 +70,9 @@ const Footer = ({ isPage }: { isPage?: boolean }) => {
       </div>
 
       <div className={classes.bottom}>
-        <div className={classes.time}>2023 © {time} WAT</div>
+        <div className={classes.time}>
+          {new Date().getFullYear()} © {time} WAT
+        </div>
         <div className={classes.wrapper}>
           <div className={classes.letsConnect}>Let's connect</div>
 

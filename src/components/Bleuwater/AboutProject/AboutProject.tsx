@@ -30,7 +30,7 @@ const AboutProject = () => {
           <div className={classes.topic}>Client </div>
           <div>Bleu Water.</div>
           <div className={classes.topic}>Timeline</div>
-          <div>Jan - present 2023</div>
+          <div>Jan - present {new Date().getFullYear()}</div>
         </div>
       </div>
     </div>
